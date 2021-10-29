@@ -11,14 +11,8 @@ from bleak import BleakClient, discover
 
 
 root_path = os.environ["HOME"]
-audio_root = f"{root_path}/dev/ece202/ece202-fall21-project/ble/audio"
-nfiles_audio_dir = os.listdir(audio_root)
-afile_num = len(nfiles_audio_dir)
+output_file = f"{root_path}/dev/ece202/ece202-fall21-project/ble/microphone_dump.csv"
 
-audio_file = "/audio{}.csv".format(afile_num)
-# Creates a new file
-with open(audio_file, 'w') as fp:
-    pass
 selected_device = []
 
 
@@ -29,7 +23,7 @@ class DataToFile:
     def __init__(self, write_path):
         self.path = write_path
 
-    def write_to_csv(self, times: int, delays: datetime, data_values: Any):
+    def write_to_csv(self, times: [int], delays: [datetime], data_values: [Any]):
 
         if len(set([len(times), len(delays), len(data_values)])) > 1:
             raise Exception("Not all data lists are the same length.")
@@ -54,7 +48,7 @@ class Connection:
         read_characteristic: str,
         write_characteristic: str,
         data_dump_handler: Callable[[str, Any], None],
-        data_dump_size: int = 512,
+        data_dump_size: int = 256,
     ):
         self.loop = loop
         self.read_characteristic = read_characteristic
@@ -188,7 +182,7 @@ if __name__ == "__main__":
     # Create the event loop.
     loop = asyncio.get_event_loop()
 
-    data_to_file = DataToFile(audio_file)
+    data_to_file = DataToFile(output_file)
     connection = Connection(
         loop, read_characteristic, write_characteristic, data_to_file.write_to_csv
     )
