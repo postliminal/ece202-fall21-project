@@ -188,11 +188,15 @@ if __name__ == "__main__":
     # Create the event loop.
     loop = asyncio.get_event_loop()
 
-    data_to_file = DataToFile(audio_file)
-    connection = Connection(
-        loop, read_characteristic, write_characteristic, data_to_file.write_to_csv
-    )
-    try:
+<< << << < HEAD
+  data_to_file = DataToFile(audio_file)
+== == == =
+  data_to_file = DataToFile(output_file)
+>>>>>> > 061fd63293a11cb5348644ffdcf99ee9039c2777
+  connection = Connection(
+       loop, read_characteristic, write_characteristic, data_to_file.write_to_csv
+       )
+   try:
         asyncio.ensure_future(connection.manager())
         asyncio.ensure_future(user_console_manager(connection))
         asyncio.ensure_future(main())
