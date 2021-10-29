@@ -15,7 +15,7 @@ audio_root = f"{root_path}/dev/ece202/ece202-fall21-project/ble/audio"
 nfiles_audio_dir = os.listdir(audio_root)
 afile_num = len(nfiles_audio_dir)
 
-audio_file = "/audio{}.csv".format(afile_num)
+audio_file = audio_root+"/audio{}.csv".format(afile_num)
 # Creates a new file
 with open(audio_file, 'w') as fp:
     pass
@@ -149,7 +149,7 @@ class Connection:
         self.rx_timestamps.clear()
 
     def notification_handler(self, sender: str, data: Any):
-        self.rx_data.append(int.from_bytes(data, byteorder="big"))
+        self.rx_data.append(data)
         self.record_time_info()
         if len(self.rx_data) >= self.dump_size:
             self.data_dump_handler(
