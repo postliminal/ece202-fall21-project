@@ -14,7 +14,11 @@ root_path = os.environ["HOME"]
 audio_root = f"{root_path}/dev/ece202/ece202-fall21-project/ble/audio"
 nfiles_audio_dir = os.listdir(audio_root)
 afile_num = len(nfiles_audio_dir)
+
 audio_file = "/audio{}.csv".format(afile_num)
+# Creates a new file
+with open(audio_file, 'w') as fp:
+    pass
 selected_device = []
 
 
@@ -184,7 +188,7 @@ if __name__ == "__main__":
     # Create the event loop.
     loop = asyncio.get_event_loop()
 
-    data_to_file = DataToFile(output_file)
+    data_to_file = DataToFile(audio_file)
     connection = Connection(
         loop, read_characteristic, write_characteristic, data_to_file.write_to_csv
     )
