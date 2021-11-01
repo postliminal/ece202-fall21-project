@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: //postliminal.github.io/ece202-fall21-project/sitemap.xml

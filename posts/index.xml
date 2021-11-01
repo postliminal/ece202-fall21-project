@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>LOCALIZZACIONE</title>
-    <link>//postliminal.github.io/ece202-fall21-project/</link>
-    <description>Recent content on LOCALIZZACIONE</description>
+    <title>Posts on LOCALIZZACIONE</title>
+    <link>//postliminal.github.io/ece202-fall21-project/posts/</link>
+    <description>Recent content in Posts on LOCALIZZACIONE</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Nov 2021 01:26:43 -0700</lastBuildDate><atom:link href="//postliminal.github.io/ece202-fall21-project/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Nov 2021 01:26:43 -0700</lastBuildDate><atom:link href="//postliminal.github.io/ece202-fall21-project/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Proposal</title>
       <link>//postliminal.github.io/ece202-fall21-project/posts/0proposal/</link>
@@ -31,15 +31,6 @@
       <pubDate>Mon, 01 Nov 2021 01:26:43 -0700</pubDate>
       
       <guid>//postliminal.github.io/ece202-fall21-project/posts/6references/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Overview</title>
-      <link>//postliminal.github.io/ece202-fall21-project/contact/</link>
-      <pubDate>Mon, 01 Nov 2021 01:26:06 -0700</pubDate>
-      
-      <guid>//postliminal.github.io/ece202-fall21-project/contact/</guid>
       <description></description>
     </item>
     
