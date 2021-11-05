@@ -13,7 +13,7 @@
       <pubDate>Mon, 01 Nov 2021 01:26:06 -0700</pubDate>
       
       <guid>//postliminal.github.io/ece202-fall21-project/posts/0proposal/</guid>
-      <description>Objective &amp;amp; Motivation Indoors localization has been an interesting problem, since GPS communications can&amp;rsquo;t get indoors and therefore, localization systems have to rely on other techniques. Multiple solutions have arised including: localization via audio signals, via Bluetooth, via radio 802.15.4. Seeing how the Arduino Nano BLE Sense has all of these sensors, we are seeking to implement findings of localization research, compare approaches, find out if sensors can be combined. Lastly we seek to parametrize sensing properties of our system and run experiments on the effects on localization accuracy.</description>
+      <description>Project Proposal 1. Motivation &amp;amp; Objective Indoors localization has been a highly researched topic for decades. Since GPS signals can’t reach devices inside buildings, alternative methods using radio signals (Bluetooth, 802.15.4, wifi), audio signals, visual signals, etc. have been devised and published. Given that these sensing technologies (radio, audio, video, depth) continue to improve, the indoors localization problem is still relevant and continues to be actively researched. Therefore, we seek to contribute to the ongoing research by approaching the localization problem via the implementation and experimentation of some of these algorithms in a resource constrained computing environment (Arduino Nano Sense 33 BLE).</description>
     </item>
     
     <item>
