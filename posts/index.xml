@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on LOCALIZZACIONE</title>
-    <link>//postliminal.github.io/ece202-fall21-project/posts/</link>
+    <link>//postliminal.github.io/ecem202a_project/posts/</link>
     <description>Recent content in Posts on LOCALIZZACIONE</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Nov 2021 01:26:43 -0700</lastBuildDate><atom:link href="//postliminal.github.io/ece202-fall21-project/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Nov 2021 01:26:43 -0700</lastBuildDate><atom:link href="//postliminal.github.io/ecem202a_project/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Proposal</title>
-      <link>//postliminal.github.io/ece202-fall21-project/posts/0proposal/</link>
+      <link>//postliminal.github.io/ecem202a_project/posts/0proposal/</link>
       <pubDate>Mon, 01 Nov 2021 01:26:06 -0700</pubDate>
       
-      <guid>//postliminal.github.io/ece202-fall21-project/posts/0proposal/</guid>
+      <guid>//postliminal.github.io/ecem202a_project/posts/0proposal/</guid>
       <description>Project Proposal 1. Motivation &amp;amp; Objective Indoors localization has been a highly researched topic for decades. Since GPS signals can’t reach devices inside buildings, alternative methods using radio signals (Bluetooth, 802.15.4, wifi), audio signals, visual signals, etc. have been devised and published. Given that these sensing technologies (radio, audio, video, depth) continue to improve, the indoors localization problem is still relevant and continues to be actively researched. Therefore, we seek to contribute to the ongoing research by approaching the localization problem via the implementation and experimentation of some of these algorithms in a resource constrained computing environment (Arduino Nano Sense 33 BLE).</description>
     </item>
     
     <item>
       <title>Overview</title>
-      <link>//postliminal.github.io/ece202-fall21-project/posts/1overview/</link>
+      <link>//postliminal.github.io/ecem202a_project/posts/1overview/</link>
       <pubDate>Mon, 01 Nov 2021 01:26:06 -0700</pubDate>
       
-      <guid>//postliminal.github.io/ece202-fall21-project/posts/1overview/</guid>
+      <guid>//postliminal.github.io/ecem202a_project/posts/1overview/</guid>
       <description>how to insert code blocks indents = 4; return null;  images: </description>
     </item>
     
     <item>
       <title>References</title>
-      <link>//postliminal.github.io/ece202-fall21-project/posts/6references/</link>
+      <link>//postliminal.github.io/ecem202a_project/posts/6references/</link>
       <pubDate>Mon, 01 Nov 2021 01:26:43 -0700</pubDate>
       
-      <guid>//postliminal.github.io/ece202-fall21-project/posts/6references/</guid>
+      <guid>//postliminal.github.io/ecem202a_project/posts/6references/</guid>
       <description></description>
     </item>
     
