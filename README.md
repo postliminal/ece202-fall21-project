@@ -1,10 +1,9 @@
 # ecem202a_project
-This is repository template for UCLA ECEM202A / CSM213A projects.
+This is repository for Roy Jara and Edwin Calderon's for UCLA ECEM202A project.
 
-Use the folders as follows:
+Organization:
 
-* doc/ for website content
 * software/ for code used in your project
 * data/ for data data used in your project
+* gh-pages (branch) for the website and documentation
 
-You may add additional folders as necessary.
