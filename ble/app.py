@@ -21,6 +21,14 @@ from bleak import BleakClient, discover
 # use this to convert from byte to float
 import struct
 
+# handle args
+
+root_path = os.environ["HOME"]
+output_dir = os.path.join(
+    root_path, "dev/ece202/ece202-fall21-project/ble/data")
+offset = len(os.listdir(output_dir))
+output_file = f"{output_dir}/data_dump{offset}.csv"
+
 
 class DataToFile:
 
@@ -28,13 +36,16 @@ class DataToFile:
 
     def __init__(self, write_path):
         self.path = write_path
+        with open(self.path, "a+") as f:   # delete later
+            f.write("file created")
 
     # temporary to test connection
     def dummy(self):
         pass
 
     # handle all three: data, delay, and time
-    def write_to_csv(self, times: int, delays: datetime, data_values: Any):
+    # def write_to_csv(self, times: int, delays: datetime, data_values: Any):
+    def write_to_csv(self, data_values: int, times: datetime, delays: Any):
 
         if len(set([len(times), len(delays), len(data_values)])) > 1:
             raise Exception("Not all data lists are the same length.")
@@ -46,7 +57,8 @@ class DataToFile:
                         for name in self.column_names]) + ",\n")
             else:
                 for i in range(len(data_values)):
-                    f.write(f"{times[i]},{delays[i]},{data_values[i]},\n")
+                    f.write(
+                        f"{times[i]},{delays[i]},{struct.unpack('f', data_values[i])[0]},\n")
 
 
 class Connection:
@@ -193,10 +205,9 @@ if __name__ == "__main__":
     # Create the event loop.
     loop = asyncio.get_event_loop()
 
-    audio_file = ""
-    data_to_file = DataToFile(audio_file)
+    data_to_file = DataToFile(output_file)
     connection = Connection(
-        loop, read_characteristic, write_characteristic, data_to_file.dummy
+        loop, read_characteristic, write_characteristic, data_to_file.write_to_csv
     )
     try:
         asyncio.ensure_future(connection.manager())
