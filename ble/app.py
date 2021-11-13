@@ -1,4 +1,13 @@
 # https://tutorialedge.net/python/concurrency/asyncio-event-loops-tutorial/
+# example for receiving mic buffer from arduino sketch.
+#
+# currently adapting to serve as comm interface for obtaining data from multiple peripherals
+#
+# todo:
+# - save data to file.
+# - make it work for rssi+ID, handshakes, beacons, types of ble
+# - then make an "enum" to receive params to select peripheral to record from.
+
 import os
 import sys
 import asyncio
@@ -9,17 +18,8 @@ from typing import Callable, Any
 from aioconsole import ainput
 from bleak import BleakClient, discover
 
-
-root_path = os.environ["HOME"]
-audio_root = f"{root_path}/dev/ece202/ece202-fall21-project/ble/audio"
-nfiles_audio_dir = os.listdir(audio_root)
-afile_num = len(nfiles_audio_dir)
-
-audio_file = audio_root+"/audio{}.csv".format(afile_num)
-# Creates a new file
-with open(audio_file, 'w') as fp:
-    pass
-selected_device = []
+# use this to convert from byte to float
+import struct
 
 
 class DataToFile:
@@ -29,6 +29,11 @@ class DataToFile:
     def __init__(self, write_path):
         self.path = write_path
 
+    # temporary to test connection
+    def dummy(self):
+        pass
+
+    # handle all three: data, delay, and time
     def write_to_csv(self, times: int, delays: datetime, data_values: Any):
 
         if len(set([len(times), len(delays), len(data_values)])) > 1:
@@ -70,7 +75,7 @@ class Connection:
         self.rx_timestamps = []
         self.rx_delays = []
 
-    def on_disconnect(self, client: BleakClient, future: asyncio.Future):
+    def on_disconnect(self, client: BleakClient):
         self.connected = False
         # Put code here to handle what happens on disconnet.
         print(f"Disconnected from {self.connected_device.name}!")
@@ -87,7 +92,7 @@ class Connection:
                 await self.connect()
             else:
                 await self.select_device()
-                await asyncio.sleep(15.0, loop=loop)
+                await asyncio.sleep(15.0)
 
     async def connect(self):
         if self.connected:
@@ -104,7 +109,7 @@ class Connection:
                 while True:
                     if not self.connected:
                         break
-                    await asyncio.sleep(3.0, loop=loop)
+                    await asyncio.sleep(3.0)
             else:
                 print(f"Failed to connect to {self.connected_device.name}")
         except Exception as e:
@@ -112,7 +117,7 @@ class Connection:
 
     async def select_device(self):
         print("Bluetooh LE hardware warming up...")
-        await asyncio.sleep(2.0, loop=loop)  # Wait for BLE to initialize.
+        await asyncio.sleep(2.0)  # Wait for BLE to initialize.
         devices = await discover()
 
         print("Please select device: ")
@@ -168,7 +173,7 @@ async def user_console_manager(connection: Connection):
             await connection.client.write_gatt_char(write_characteristic, bytes_to_send)
             print(f"Sent: {input_str}")
         else:
-            await asyncio.sleep(2.0, loop=loop)
+            await asyncio.sleep(2.0)
 
 
 async def main():
@@ -180,22 +185,24 @@ async def main():
 #############
 # App Main
 #############
-read_characteristic = "00001143-0000-1000-8000-00805f9b34fb"
-write_characteristic = "00001142-0000-1000-8000-00805f9b34fb"
+read_characteristic = "00001524-1212-efde-1523-785feabcd123"
+write_characteristic = "00001525-1212-efde-1523-785feabcd123"
 
 if __name__ == "__main__":
 
     # Create the event loop.
     loop = asyncio.get_event_loop()
 
+    audio_file = ""
     data_to_file = DataToFile(audio_file)
     connection = Connection(
-        loop, read_characteristic, write_characteristic, data_to_file.write_to_csv
+        loop, read_characteristic, write_characteristic, data_to_file.dummy
     )
     try:
         asyncio.ensure_future(connection.manager())
         asyncio.ensure_future(user_console_manager(connection))
         asyncio.ensure_future(main())
+        print("######### ---- entering run_forever loop :^) ---- #########")
         loop.run_forever()
     except KeyboardInterrupt:
         print()
