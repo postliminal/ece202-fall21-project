@@ -174,7 +174,7 @@ async def user_console_manager(connection: Connection):
     while True:
         if connection.client and connection.connected:
             input_str = await ainput("Enter string: ")
-            bytes_to_send = bytearray(map(ord, input_str))
+            bytes_to_send = (int(input_str)).to_bytes(1, byteorder="little")
             await connection.client.write_gatt_char(write_characteristic, bytes_to_send)
             print(f"Sent: {input_str}")
         else:
