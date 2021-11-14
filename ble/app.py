@@ -4,10 +4,9 @@
 # currently adapting to serve as comm interface for obtaining data from multiple peripherals
 #
 # todo:
-# - save data to file.
-# - create serial interface
+# - create serial interface -- currently in a different file
 # - make it work for rssi+ID, handshakes, beacons, types of ble
-# - then make an "enum" to receive params to select peripheral to record from.
+# - then make an "enum" to handle cli arguments to select peripheral to record from.
 
 import os
 import sys
@@ -19,10 +18,7 @@ from typing import Callable, Any
 from aioconsole import ainput
 from bleak import BleakClient, discover
 
-# use this to convert from byte to float
 import struct
-
-# handle args
 
 root_path = os.environ["HOME"]
 output_dir = os.path.join(
@@ -37,16 +33,12 @@ class DataToFile:
 
     def __init__(self, write_path):
         self.path = write_path
-        with open(self.path, "a+") as f:   # delete later
-            f.write("file created")
 
-    # temporary to test connection
+    # use to test connection
     def dummy(self):
         pass
 
-    # handle all three: data, delay, and time
-    # def write_to_csv(self, times: int, delays: datetime, data_values: Any):
-    def write_to_csv(self, data_values: int, times: datetime, delays: Any):
+    def write_to_csv(self, data_values: int, times: int, delays: datetime):
 
         if len(set([len(times), len(delays), len(data_values)])) > 1:
             raise Exception("Not all data lists are the same length.")
@@ -59,7 +51,7 @@ class DataToFile:
             else:
                 for i in range(len(data_values)):
                     f.write(
-                        f"{times[i]},{delays[i]},{struct.unpack('f', data_values[i])[0]},\n")
+                        f"{times[i]}, {delays[i]}, {str(struct.unpack('?', data_values[i])[0])}, \n" + "\n")
 
 
 class Connection:
@@ -72,7 +64,7 @@ class Connection:
         read_characteristic: str,
         write_characteristic: str,
         data_dump_handler: Callable[[str, Any], None],
-        data_dump_size: int = 512,
+        data_dump_size: int = 100,
     ):
         self.loop = loop
         self.read_characteristic = read_characteristic
@@ -105,7 +97,7 @@ class Connection:
                 await self.connect()
             else:
                 await self.select_device()
-                await asyncio.sleep(15.0)
+                await asyncio.sleep(5.0)
 
     async def connect(self):
         if self.connected:
@@ -214,7 +206,8 @@ if __name__ == "__main__":
         asyncio.ensure_future(connection.manager())
         asyncio.ensure_future(user_console_manager(connection))
         asyncio.ensure_future(main())
-        print("######### ---- entering run_forever loop :^) ---- #########")
+        print(
+            "\n\n ------------------ entering run_forever loop :^) ------------------ \n\n")
         loop.run_forever()
     except KeyboardInterrupt:
         print()
