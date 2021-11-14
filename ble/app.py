@@ -5,6 +5,7 @@
 #
 # todo:
 # - save data to file.
+# - create serial interface
 # - make it work for rssi+ID, handshakes, beacons, types of ble
 # - then make an "enum" to receive params to select peripheral to record from.
 
