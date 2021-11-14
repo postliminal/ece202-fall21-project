@@ -1,0 +1,125 @@
+<!DOCTYPE CrossStudio_Project_File>
+<solution Name="ble_app_blinky_pca10059_s140" target="8" version="2">
+  <project Name="ble_app_blinky_pca10059_s140">
+    <configuration
+      Name="Common"
+      arm_architecture="v7EM"
+      arm_core_type="Cortex-M4"
+      arm_endian="Little"
+      arm_fp_abi="Hard"
+      arm_fpu_type="FPv4-SP-D16"
+      arm_linker_heap_size="8192"
+      arm_linker_process_stack_size="0"
+      arm_linker_stack_size="8192"
+      arm_linker_treat_warnings_as_errors="No"
+      arm_simulator_memory_simulation_parameter="RWX 00000000,00100000,FFFFFFFF;RWX 20000000,00010000,CDCDCDCD"
+      arm_target_device_name="nRF52840_xxAA"
+      arm_target_interface_type="SWD"
+      c_user_include_directories="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/ble/ble_advertising;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/ble/ble_dtm;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/ble/ble_racp;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/ble/ble_services/ble_ancs_c;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/ble/ble_services/ble_ans_c;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/ble/ble_services/ble_bas;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/ble/ble_services/ble_bas_c;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/ble/ble_services/ble_cscs;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/ble/ble_services/ble_cts_c;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/ble/ble_services/ble_dfu;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/ble/ble_services/ble_dis;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/ble/ble_services/ble_gls;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/ble/ble_services/ble_hids;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/ble/ble_services/ble_hrs;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/ble/ble_services/ble_hrs_c;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/ble/ble_services/ble_hts;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/ble/ble_services/ble_ias;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/ble/ble_services/ble_ias_c;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/ble/ble_services/ble_lbs;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/ble/ble_services/ble_lbs_c;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/ble/ble_services/ble_lls;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/ble/ble_services/ble_nus;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/ble/ble_services/ble_nus_c;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/ble/ble_services/ble_rscs;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/ble/ble_services/ble_rscs_c;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/ble/ble_services/ble_tps;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/ble/common;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/ble/nrf_ble_gatt;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/ble/nrf_ble_qwr;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/ble/peer_manager;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/boards;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/atomic;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/atomic_fifo;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/atomic_flags;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/balloc;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/bootloader/ble_dfu;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/button;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/cli;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/crc16;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/crc32;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/crypto;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/csense;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/csense_drv;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/delay;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/ecc;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/experimental_section_vars;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/experimental_task_manager;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/fds;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/fstorage;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/gfx;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/gpiote;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/hardfault;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/hci;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/led_softblink;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/log;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/log/src;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/low_power_pwm;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/mem_manager;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/memobj;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/mpu;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/mutex;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/pwm;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/pwr_mgmt;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/queue;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/ringbuf;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/scheduler;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/sdcard;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/slip;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/sortlist;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/spi_mngr;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/stack_guard;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/strerror;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/svc;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/timer;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/twi_mngr;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/twi_sensor;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/usbd;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/usbd/class/audio;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/usbd/class/cdc;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/usbd/class/cdc/acm;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/usbd/class/hid;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/usbd/class/hid/generic;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/usbd/class/hid/kbd;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/usbd/class/hid/mouse;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/usbd/class/msc;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/util;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/nfc/ndef/conn_hand_parser;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/nfc/ndef/conn_hand_parser/ac_rec_parser;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/nfc/ndef/conn_hand_parser/ble_oob_advdata_parser;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/nfc/ndef/conn_hand_parser/le_oob_rec_parser;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/nfc/ndef/connection_handover/ac_rec;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/nfc/ndef/connection_handover/ble_oob_advdata;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/nfc/ndef/connection_handover/ble_pair_lib;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/nfc/ndef/connection_handover/ble_pair_msg;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/nfc/ndef/connection_handover/common;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/nfc/ndef/connection_handover/ep_oob_rec;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/nfc/ndef/connection_handover/hs_rec;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/nfc/ndef/connection_handover/le_oob_rec;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/nfc/ndef/generic/message;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/nfc/ndef/generic/record;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/nfc/ndef/launchapp;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/nfc/ndef/parser/message;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/nfc/ndef/parser/record;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/nfc/ndef/text;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/nfc/ndef/uri;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/nfc/platform;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/nfc/t2t_lib;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/nfc/t2t_parser;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/nfc/t4t_lib;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/nfc/t4t_parser/apdu;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/nfc/t4t_parser/cc_file;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/nfc/t4t_parser/hl_detection_procedure;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/nfc/t4t_parser/tlv;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/softdevice/common;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/softdevice/s140/headers;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/softdevice/s140/headers/nrf52;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/toolchain/cmsis/include;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/external/fprintf;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/external/segger_rtt;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/external/utf_converter;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/integration/nrfx;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/integration/nrfx/legacy;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/modules/nrfx;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/modules/nrfx/drivers/include;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/modules/nrfx/hal;C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/modules/nrfx/mdk;.;"
+      c_preprocessor_definitions="APP_TIMER_V2;APP_TIMER_V2_RTC1_ENABLED;BOARD_PCA10059;CONFIG_GPIO_AS_PINRESET;FLOAT_ABI_HARD;INITIALIZE_USER_SECTIONS;NO_VTOR_CONFIG;NRF52840_XXAA;NRF_SD_BLE_API_VERSION=7;S140;SOFTDEVICE_PRESENT;"
+      debug_target_connection="J-Link"
+      gcc_entry_point="Reset_Handler"
+      macros="CMSIS_CONFIG_TOOL=C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/external_tools/cmsisconfig/CMSIS_Configuration_Wizard.jar"
+      debug_register_definition_file="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/modules/nrfx/mdk/nrf52840.svd"
+      debug_additional_load_file="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/softdevice/s140/hex/s140_nrf52_7.2.0_softdevice.hex"
+      debug_start_from_entry_point_symbol="No"
+      gcc_debugging_level="Level 3"      linker_output_format="hex"
+      linker_printf_width_precision_supported="Yes"
+      linker_printf_fmt_level="long"
+      linker_scanf_fmt_level="long"
+      linker_section_placement_file="flash_placement.xml"
+      linker_section_placement_macros="FLASH_PH_START=0x0;FLASH_PH_SIZE=0x100000;RAM_PH_START=0x20000000;RAM_PH_SIZE=0x40000;FLASH_START=0x27000;FLASH_SIZE=0xd9000;RAM_START=0x20002300;RAM_SIZE=0x3dd00"
+      
+      linker_section_placements_segments="FLASH1 RX 0x0 0x100000;RAM1 RWX 0x20000000 0x40000"
+      project_directory=""
+      project_type="Executable" />
+      <folder Name="Segger Startup Files">
+        <file file_name="$(StudioDir)/source/thumb_crt0.s" />
+      </folder>
+    <folder Name="nRF_Log">
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/log/src/nrf_log_backend_rtt.c" />
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/log/src/nrf_log_backend_serial.c" />
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/log/src/nrf_log_backend_uart.c" />
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/log/src/nrf_log_default_backends.c" />
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/log/src/nrf_log_frontend.c" />
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/log/src/nrf_log_str_formatter.c" />
+    </folder>
+    <folder Name="nRF_Libraries">
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/button/app_button.c" />
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/util/app_error.c" />
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/util/app_error_handler_gcc.c" />
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/util/app_error_weak.c" />
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/scheduler/app_scheduler.c" />
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/timer/app_timer2.c" />
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/util/app_util_platform.c" />
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/timer/drv_rtc.c" />
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/hardfault/hardfault_implementation.c" />
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/util/nrf_assert.c" />
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/atomic_fifo/nrf_atfifo.c" />
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/atomic_flags/nrf_atflags.c" />
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/atomic/nrf_atomic.c" />
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/balloc/nrf_balloc.c" />
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/external/fprintf/nrf_fprintf.c" />
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/external/fprintf/nrf_fprintf_format.c" />
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/memobj/nrf_memobj.c" />
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/pwr_mgmt/nrf_pwr_mgmt.c" />
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/ringbuf/nrf_ringbuf.c" />
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/experimental_section_vars/nrf_section_iter.c" />
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/sortlist/nrf_sortlist.c" />
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/strerror/nrf_strerror.c" />
+    </folder>
+    <folder Name="None">
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/modules/nrfx/mdk/ses_startup_nrf52840.s" />
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/modules/nrfx/mdk/ses_startup_nrf_common.s" />
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/modules/nrfx/mdk/system_nrf52840.c" />
+    </folder>
+    <folder Name="Board Definition">
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/boards/boards.c" />
+    </folder>
+    <folder Name="nRF_Drivers">
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/integration/nrfx/legacy/nrf_drv_clock.c" />
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/integration/nrfx/legacy/nrf_drv_uart.c" />
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/modules/nrfx/soc/nrfx_atomic.c" />
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/modules/nrfx/drivers/src/nrfx_clock.c" />
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/modules/nrfx/drivers/src/nrfx_gpiote.c" />
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/modules/nrfx/drivers/src/prs/nrfx_prs.c" />
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/modules/nrfx/drivers/src/nrfx_uart.c" />
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/modules/nrfx/drivers/src/nrfx_uarte.c" />
+    </folder>
+    <folder Name="Application">
+      <file file_name="main.c" />
+      <file file_name="sdk_config.h" />
+    </folder>
+    <folder Name="nRF_Segger_RTT">
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/external/segger_rtt/SEGGER_RTT.c" />
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/external/segger_rtt/SEGGER_RTT_Syscalls_SES.c" />
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/external/segger_rtt/SEGGER_RTT_printf.c" />
+    </folder>
+    <folder Name="nRF_BLE">
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/ble/common/ble_advdata.c" />
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/ble/common/ble_conn_params.c" />
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/ble/common/ble_conn_state.c" />
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/ble/common/ble_srv_common.c" />
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/ble/nrf_ble_gatt/nrf_ble_gatt.c" />
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/ble/nrf_ble_qwr/nrf_ble_qwr.c" />
+    </folder>
+    <folder Name="UTF8/UTF16 converter">
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/external/utf_converter/utf.c" />
+    </folder>
+    <folder Name="nRF_BLE_Services">
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/ble/ble_services/ble_lbs/ble_lbs.c" />
+    </folder>
+    <folder Name="nRF_SoftDevice">
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/softdevice/common/nrf_sdh.c" />
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/softdevice/common/nrf_sdh_ble.c" />
+      <file file_name="C:/Users/royja/Desktop/nRF5_SDK_17.1.0_ddde560/components/softdevice/common/nrf_sdh_soc.c" />
+    </folder>
+  </project>
+  <configuration Name="Release"
+    c_preprocessor_definitions="NDEBUG"
+    link_time_optimization="No"    gcc_optimization_level="Optimize For Size" />
+  <configuration Name="Debug"
+    c_preprocessor_definitions="DEBUG; DEBUG_NRF"
+    gcc_optimization_level="None"/>
+
+</solution>
