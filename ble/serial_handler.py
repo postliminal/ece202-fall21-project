@@ -24,8 +24,8 @@ class Reader(asyncio.Protocol):
             for line in lines[:-1]:
                 print(f'Reader received: {line.decode()}')
                 self.msgs_recvd += 1
-        # if self.msgs_recvd == 4:
-        #     self.transport.close()
+        if self.msgs_recvd == 1000:
+            self.transport.close()
 
     def connection_lost(self, exc):
         print('Reader closed')
@@ -56,13 +56,13 @@ class Writer(asyncio.Protocol):
 
 loop = asyncio.get_event_loop()
 reader = serial_asyncio.create_serial_connection(
-    loop, Reader, '/dev/cu.usbmodem14301', baudrate=9600)
+    loop, Reader, '/dev/cu.usbmodem14101', baudrate=9600)
 # writer = serial_asyncio.create_serial_connection(
 #     loop, Writer, 'writer', baudrate=9600)
 asyncio.ensure_future(reader)
 print('Reader scheduled')
 # asyncio.ensure_future(writer)
 # print('Writer scheduled')
-# loop.call_later(10, loop.stop)
+loop.call_later(10, loop.stop)
 loop.run_forever()
 print('Done')

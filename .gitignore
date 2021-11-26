@@ -1,5 +1,9 @@
 ble/.ipynb_checkpoints
 .DS_Store
+openthread_cli_arduino/_build/nrf52840_xxaa/*
+openthread_cli_arduino/.vscode
+ble_app_beacon_dongle/Output/Release/Obj/*
+ble_app_beacon_dongle/Output/Debug/Obj/*
 <<<<<<< HEAD
 zephyr/
 =======
