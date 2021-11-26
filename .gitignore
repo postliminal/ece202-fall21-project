@@ -1,6 +1,6 @@
 .DS_Store
-software/openthread_cli_arduino/_build/nrf52840_xxaa/*
-software/openthread_cli_arduino/.vscode
-software/ble_app_beacon_dongle/Output/Release/Obj/*
-software/ble_app_beacon_dongle/Output/Debug/Obj/*
+software/openthread_app/openthread_cli_arduino/_build/nrf52840_xxaa/*
+software/openthread_app/openthread_cli_arduino/.vscode
+software/ble_app/ble_app_beacon_dongle/Output/Release/Obj/*
+software/ble_app/ble_app_beacon_dongle/Output/Debug/Obj/*
 software/python_ble/.ipynb_checkpoints
