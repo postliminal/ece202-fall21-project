@@ -4,7 +4,7 @@ OUTPUT_DIRECTORY := _build
 
 # SDK_ROOT := ../../../../../../../..
 SDK_ROOT := /Users/royjara/Desktop/nRF5_SDK_for_Thread_and_Zigbee_v4.1.0_32ce5f8
-PROJ_DIR := /Users/royjara/dev/ece202/ece202-fall21-project/openthread_cli_arduino
+PROJ_DIR := /Users/royjara/dev/ece202/ece202-fall21-project/software/openthread_app/openthread_cli_arduino
 
 $(OUTPUT_DIRECTORY)/nrf52840_xxaa.out: \
   LINKER_SCRIPT  := thread_cli_ftd_usb_gcc_nrf52.ld
