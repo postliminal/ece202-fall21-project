@@ -6,7 +6,7 @@
     <description>Recent content on LOCALIZZACIONE</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Nov 2021 01:26:06 -0700</lastBuildDate><atom:link href="//postliminal.github.io/ecem202a_project/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Dec 2021 01:26:06 -0700</lastBuildDate><atom:link href="//postliminal.github.io/ecem202a_project/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Proposal</title>
       <link>//postliminal.github.io/ecem202a_project/posts/0proposal/</link>
@@ -14,6 +14,16 @@
       
       <guid>//postliminal.github.io/ecem202a_project/posts/0proposal/</guid>
       <description>Project Proposal 1. Motivation &amp;amp; Objective Indoors localization has been a highly researched topic for decades. Since GPS signals can’t reach devices inside buildings, alternative methods using radio signals (Bluetooth, 802.15.4, wifi), audio signals, visual signals, etc. have been devised and published. Given that these sensing technologies (radio, audio, video, depth) continue to improve, the indoors localization problem is still relevant and continues to be actively researched. Therefore, we seek to contribute to the ongoing research by approaching the localization problem via the implementation and experimentation of some of these algorithms in a resource constrained computing environment (Arduino Nano Sense 33 BLE).</description>
+    </item>
+    
+    <item>
+      <title>Overview</title>
+      <link>//postliminal.github.io/ecem202a_project/posts/1overview/</link>
+      <pubDate>Thu, 02 Dec 2021 01:26:06 -0700</pubDate>
+      
+      <guid>//postliminal.github.io/ecem202a_project/posts/1overview/</guid>
+      <description>1. Overview Problem: With the rise and continuous update of various IoT communication standards it is hard to keep track of what is the most suitable option. Two standards, Bluetooth (BLE 5.0 standard) and Thread (implemented using OpenThread), are either massively adopted (BLE) or rapidly gaining popularity (thread). However, there has not been a recent analysis between these two protocols.
+Project Goals: Make an updated analysis between these two protocols. By using various radio configurations for both protocols we can get a better understanding on their performance and limitations.</description>
     </item>
     
     <item>
