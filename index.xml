@@ -27,6 +27,17 @@ Project Goals: Make an updated analysis between these two protocols. By using va
     </item>
     
     <item>
+      <title>Design</title>
+      <link>//postliminal.github.io/ecem202a_project/posts/4design/</link>
+      <pubDate>Mon, 01 Nov 2021 01:26:43 -0700</pubDate>
+      
+      <guid>//postliminal.github.io/ecem202a_project/posts/4design/</guid>
+      <description>[image 1] - should be showing 3 beacons, a central device, and maybe a PC? Plus X-Y coordinates and roughly spatial distance. DO NOT INCLUDE specific ble or openthread specs/terms/concepts.
+Contents  Hardware Platforms Software Stack BLE Application OpenThread Application Location from RSSI Experiments  The Hardware Platform The SoC: Nordic nRF52840 [images of boards?]
+ (2x) Arduino Nano Sense 33 BLE (2x) nRF52840 Dongle (1x) nRF52840 Development Kit  The Software Stack Embedded Software Development:  Segger Embedded Studio nRF5 SDK &amp;amp; nRF5 SDK for Thread and Zigbee nRF Connect+Programmer for flashing code CMSIS Libraries for Arm Cortex M microcontrollers  Utilities and Other tools:  Python + Matplotlib nRF BLE Sniffer nRF 802.</description>
+    </item>
+    
+    <item>
       <title>Contact Us</title>
       <link>//postliminal.github.io/ecem202a_project/contact/</link>
       <pubDate>Mon, 01 Nov 2021 01:26:06 -0700</pubDate>

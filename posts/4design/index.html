@@ -1,0 +1,219 @@
+<!doctype html><html lang=en dir=auto>
+<head><meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta name=robots content="index, follow">
+<title>Design | LOCALIZZACIONE</title>
+<meta name=keywords content>
+<meta name=description content="[image 1] - should be showing 3 beacons, a central device, and maybe a PC? Plus X-Y coordinates and roughly spatial distance. DO NOT INCLUDE specific ble or openthread specs/terms/concepts.
+Contents  Hardware Platforms Software Stack BLE Application OpenThread Application Location from RSSI Experiments  The Hardware Platform The SoC: Nordic nRF52840 [images of boards?]
+ (2x) Arduino Nano Sense 33 BLE (2x) nRF52840 Dongle (1x) nRF52840 Development Kit  The Software Stack Embedded Software Development:  Segger Embedded Studio nRF5 SDK & nRF5 SDK for Thread and Zigbee nRF Connect+Programmer for flashing code CMSIS Libraries for Arm Cortex M microcontrollers  Utilities and Other tools:  Python + Matplotlib nRF BLE Sniffer nRF 802.">
+<meta name=author content="Edwin, Roy">
+<link rel=canonical href=//postliminal.github.io/ecem202a_project/posts/4design/>
+<link crossorigin=anonymous href=/ecem202a_project/assets/css/stylesheet.min.5e2b4101351c21e906f398ae96901791830f58d430f96f2659dab7eaef7b3cb7.css integrity="sha256-XitBATUcIekG85iulpAXkYMPWNQw+W8mWdq36u97PLc=" rel="preload stylesheet" as=style>
+<script defer crossorigin=anonymous src=/ecem202a_project/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5+kdJvBz5iKbt6B5PJI=" onload=hljs.initHighlightingOnLoad()></script>
+<link rel=icon href=//postliminal.github.io/ecem202a_project/favicon.ico>
+<link rel=icon type=image/png sizes=16x16 href=//postliminal.github.io/ecem202a_project/favicon-16x16.png>
+<link rel=icon type=image/png sizes=32x32 href=//postliminal.github.io/ecem202a_project/favicon-32x32.png>
+<link rel=apple-touch-icon href=//postliminal.github.io/ecem202a_project/apple-touch-icon.png>
+<link rel=mask-icon href=//postliminal.github.io/ecem202a_project/safari-pinned-tab.svg>
+<meta name=theme-color content="#2e2e33">
+<meta name=msapplication-TileColor content="#2e2e33">
+<meta name=generator content="Hugo 0.89.4">
+<noscript>
+<style>#theme-toggle,.top-link{display:none}</style>
+<style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style>
+</noscript><meta property="og:title" content="Design">
+<meta property="og:description" content="[image 1] - should be showing 3 beacons, a central device, and maybe a PC? Plus X-Y coordinates and roughly spatial distance. DO NOT INCLUDE specific ble or openthread specs/terms/concepts.
+Contents  Hardware Platforms Software Stack BLE Application OpenThread Application Location from RSSI Experiments  The Hardware Platform The SoC: Nordic nRF52840 [images of boards?]
+ (2x) Arduino Nano Sense 33 BLE (2x) nRF52840 Dongle (1x) nRF52840 Development Kit  The Software Stack Embedded Software Development:  Segger Embedded Studio nRF5 SDK & nRF5 SDK for Thread and Zigbee nRF Connect+Programmer for flashing code CMSIS Libraries for Arm Cortex M microcontrollers  Utilities and Other tools:  Python + Matplotlib nRF BLE Sniffer nRF 802.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="//postliminal.github.io/ecem202a_project/posts/4design/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2021-11-01T01:26:43-07:00">
+<meta property="article:modified_time" content="2021-11-01T01:26:43-07:00"><meta property="og:site_name" content="ExampleSite">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="Design">
+<meta name=twitter:description content="[image 1] - should be showing 3 beacons, a central device, and maybe a PC? Plus X-Y coordinates and roughly spatial distance. DO NOT INCLUDE specific ble or openthread specs/terms/concepts.
+Contents  Hardware Platforms Software Stack BLE Application OpenThread Application Location from RSSI Experiments  The Hardware Platform The SoC: Nordic nRF52840 [images of boards?]
+ (2x) Arduino Nano Sense 33 BLE (2x) nRF52840 Dongle (1x) nRF52840 Development Kit  The Software Stack Embedded Software Development:  Segger Embedded Studio nRF5 SDK & nRF5 SDK for Thread and Zigbee nRF Connect+Programmer for flashing code CMSIS Libraries for Arm Cortex M microcontrollers  Utilities and Other tools:  Python + Matplotlib nRF BLE Sniffer nRF 802.">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"//postliminal.github.io/ecem202a_project/posts/"},{"@type":"ListItem","position":2,"name":"Design","item":"//postliminal.github.io/ecem202a_project/posts/4design/"}]}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Design","name":"Design","description":"[image 1] - should be showing 3 beacons, a central device, and maybe a PC? Plus X-Y coordinates and roughly spatial distance. DO NOT INCLUDE specific ble or openthread specs/terms/concepts.\nContents  Hardware Platforms Software Stack BLE Application OpenThread Application Location from RSSI Experiments  The Hardware Platform The SoC: Nordic nRF52840 [images of boards?]\n (2x) Arduino Nano Sense 33 BLE (2x) nRF52840 Dongle (1x) nRF52840 Development Kit  The Software Stack Embedded Software Development:  Segger Embedded Studio nRF5 SDK \u0026amp; nRF5 SDK for Thread and Zigbee nRF Connect+Programmer for flashing code CMSIS Libraries for Arm Cortex M microcontrollers  Utilities and Other tools:  Python + Matplotlib nRF BLE Sniffer nRF 802.","keywords":[],"articleBody":"[image 1] - should be showing 3 beacons, a central device, and maybe a PC? Plus X-Y coordinates and roughly spatial distance. DO NOT INCLUDE specific ble or openthread specs/terms/concepts.\nContents  Hardware Platforms Software Stack BLE Application OpenThread Application Location from RSSI Experiments  The Hardware Platform The SoC: Nordic nRF52840 [images of boards?]\n (2x) Arduino Nano Sense 33 BLE (2x) nRF52840 Dongle (1x) nRF52840 Development Kit  The Software Stack Embedded Software Development:  Segger Embedded Studio nRF5 SDK \u0026 nRF5 SDK for Thread and Zigbee nRF Connect+Programmer for flashing code CMSIS Libraries for Arm Cortex M microcontrollers  Utilities and Other tools:  Python + Matplotlib nRF BLE Sniffer nRF 802.15.4 Sniffer WireShark  BLE Application BLE Primer [Cite the 5.0 specification, 2 other papers, and nordic site]\nThe Bluetooth specification provides a full stack solution for communication. Therefore, we don’t need anything else to create the solution.\n[Figure of 37+3 adv channels and next to it overlay with wifi channels to show less interference in adv channels]\nAdvertising By default occurs over channels 37, 38 and 39, which are spread out over the 2.4MHz band, and are precisely located at the edges of the wifi band to help reduce wifi interference.\nWith the nordic SDK, advertisements can be precisely configured with various settings. We’ll explore the use of the following:\n Window size RSSI dB filtering Advertising interval  RSSI Received Signal Strength Indicator. This value measures the received signal strength in dB and can be used to esitmate the distance of the receiver from the transmitter device.\nThe RSSI is represented using a byte inside of the manufacturer specific data.\nThread Application Thread Primer [Cite the openthread website, 2 other papers, and nordic site]\n  Operates on top of 802.15.4 (which handles PHY and MAC).\n  Intended for IoT and home automation situations\n  Thread at its core: ipv6 based peer-to-peer mesh network\n  ipv6 means good performance and reliability\n  Thread implements UDP, IP Routing and 6LoWPAN.\n  Self healing and self maintaining network\n Readjust if you add devices or move them around    Ref: electroniclinic\nNetwork Design All will be full thread devices - to avoid sleep.\ninfo on node types\n Border Router: raspberry pi + ncp dongle  connects thread network to PC   End devices - Beacons (2 dongles+1 arduino) - are children Lead device - arduino  uses coAP controls requests for REEDs to become routers    Attempt 1: communicate RSSI based on hardware layer functions. Attempt 2: UDP packets Attempt 3: use mqtt-sn  Lightweight version of MQTT, using UDP Friendly for sensor networks (sleep mode, low energy, limited bandwidths) Requires a connection to a broker before being able to send/receive msgs Uses subscription based communication Publishes to a topic, other nodes can subscribe to the topic and receive the messages  references:\n ublox mqtt-sn beginner guide steve’s internet guide mqttsn  RSSI in Thread/802.15.4 Few functions/data structures to keep in mind:\n otNeighborInfo Struct Reference otChildInfo Struct Reference otThreadParentResponseInfo Struct Reference  Location from RSSI Initial Model: Geomtrical Solution  Trilateration  Improving the Model: SVM Deploying the updated model: CMSIS Libraries How to implement SVM with CMSIS-DSP\nExperiments ","wordCount":"504","inLanguage":"en","datePublished":"2021-11-01T01:26:43-07:00","dateModified":"2021-11-01T01:26:43-07:00","author":[{"@type":"Person","name":"Edwin"},{"@type":"Person","name":"Roy"}],"mainEntityOfPage":{"@type":"WebPage","@id":"//postliminal.github.io/ecem202a_project/posts/4design/"},"publisher":{"@type":"Organization","name":"LOCALIZZACIONE","logo":{"@type":"ImageObject","url":"//postliminal.github.io/ecem202a_project/favicon.ico"}}}</script>
+</head>
+<body id=top>
+<script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
+<header class=header>
+<nav class=nav>
+<div class=logo>
+<a href=//postliminal.github.io/ecem202a_project/ accesskey=h title="LOCALIZZACIONE (Alt + H)">LOCALIZZACIONE</a>
+<span class=logo-switches>
+<button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+</button>
+</span>
+</div>
+<ul id=menu>
+<li>
+<a href=//postliminal.github.io/ecem202a_project/ title=project>
+<span>project</span>
+</a>
+</li>
+<li>
+<a href=//postliminal.github.io/ecem202a_project/contact/ title="contact us">
+<span>contact us</span>
+</a>
+</li>
+</ul>
+</nav>
+</header>
+<main class=main>
+<article class=post-single>
+<header class=post-header>
+<h1 class=post-title>
+Design
+</h1>
+<div class=post-meta>November 1, 2021&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Edwin, Roy
+</div>
+</header>
+<div class=post-content>
+<p>[image 1] - should be showing 3 beacons, a central device, and maybe a PC? Plus X-Y coordinates and roughly spatial distance. DO NOT INCLUDE specific ble or openthread specs/terms/concepts.</p>
+<h1 id=contents>Contents<a hidden class=anchor aria-hidden=true href=#contents>#</a></h1>
+<ul>
+<li>Hardware Platforms</li>
+<li>Software Stack</li>
+<li>BLE Application</li>
+<li>OpenThread Application</li>
+<li>Location from RSSI</li>
+<li>Experiments</li>
+</ul>
+<h1 id=the-hardware-platform>The Hardware Platform<a hidden class=anchor aria-hidden=true href=#the-hardware-platform>#</a></h1>
+<h3 id=the-soc-nordic-nrf52840>The SoC: Nordic nRF52840<a hidden class=anchor aria-hidden=true href=#the-soc-nordic-nrf52840>#</a></h3>
+<p>[images of boards?]</p>
+<ul>
+<li>(2x) Arduino Nano Sense 33 BLE</li>
+<li>(2x) nRF52840 Dongle</li>
+<li>(1x) nRF52840 Development Kit</li>
+</ul>
+<h1 id=the-software-stack>The Software Stack<a hidden class=anchor aria-hidden=true href=#the-software-stack>#</a></h1>
+<h3 id=embedded-software-development>Embedded Software Development:<a hidden class=anchor aria-hidden=true href=#embedded-software-development>#</a></h3>
+<ul>
+<li>Segger Embedded Studio</li>
+<li>nRF5 SDK & nRF5 SDK for Thread and Zigbee</li>
+<li>nRF Connect+Programmer for flashing code</li>
+<li>CMSIS Libraries for Arm Cortex M microcontrollers</li>
+</ul>
+<h3 id=utilities-and-other-tools>Utilities and Other tools:<a hidden class=anchor aria-hidden=true href=#utilities-and-other-tools>#</a></h3>
+<ul>
+<li>Python + Matplotlib</li>
+<li>nRF BLE Sniffer</li>
+<li>nRF 802.15.4 Sniffer</li>
+<li>WireShark</li>
+</ul>
+<h1 id=ble-application>BLE Application<a hidden class=anchor aria-hidden=true href=#ble-application>#</a></h1>
+<h3 id=ble-primer>BLE Primer<a hidden class=anchor aria-hidden=true href=#ble-primer>#</a></h3>
+<p>[Cite the 5.0 specification, 2 other papers, and nordic site]</p>
+<p>The Bluetooth specification provides a full stack solution for communication. Therefore, we don&rsquo;t need anything else to create the solution.</p>
+<p>[Figure of 37+3 adv channels and next to it overlay with wifi channels to show less interference in adv channels]</p>
+<h3 id=advertising>Advertising<a hidden class=anchor aria-hidden=true href=#advertising>#</a></h3>
+<p>By default occurs over channels 37, 38 and 39, which are spread out over the 2.4MHz band, and are precisely located at the edges of the wifi band to help reduce wifi interference.</p>
+<p>With the nordic SDK, advertisements can be precisely configured with various settings. We&rsquo;ll explore the use of the following:</p>
+<ul>
+<li>Window size</li>
+<li>RSSI dB filtering</li>
+<li>Advertising interval</li>
+</ul>
+<h3 id=rssi>RSSI<a hidden class=anchor aria-hidden=true href=#rssi>#</a></h3>
+<p>Received Signal Strength Indicator. This value measures the received signal strength in dB and can be used to esitmate the distance of the receiver from the transmitter device.</p>
+<p>The RSSI is represented using a byte inside of the manufacturer specific data.</p>
+<h1 id=thread-application>Thread Application<a hidden class=anchor aria-hidden=true href=#thread-application>#</a></h1>
+<h3 id=thread-primer>Thread Primer<a hidden class=anchor aria-hidden=true href=#thread-primer>#</a></h3>
+<p><img loading=lazy src=/ece202-fall21-project/images/thread_stack.png#center alt=img1>
+</p>
+<p>[Cite the openthread website, 2 other papers, and nordic site]</p>
+<ul>
+<li>
+<p>Operates on top of 802.15.4 (which handles PHY and MAC).</p>
+</li>
+<li>
+<p>Intended for IoT and home automation situations</p>
+</li>
+<li>
+<p>Thread at its core: ipv6 based peer-to-peer mesh network</p>
+</li>
+<li>
+<p>ipv6 means good performance and reliability</p>
+</li>
+<li>
+<p>Thread implements UDP, IP Routing and 6LoWPAN.</p>
+</li>
+<li>
+<p>Self healing and self maintaining network</p>
+<ul>
+<li>Readjust if you add devices or move them around</li>
+</ul>
+</li>
+</ul>
+<p>Ref: <a href=https://www.electroniclinic.com/thread-protocol-architecture-and-topology-fully-explained/>electroniclinic</a></p>
+<h2 id=network-design>Network Design<a hidden class=anchor aria-hidden=true href=#network-design>#</a></h2>
+<p>All will be full thread devices - to avoid sleep.</p>
+<p><a href=https://openthread.io/guides/thread-primer/node-roles-and-types>info on node types</a></p>
+<ul>
+<li>Border Router: raspberry pi + ncp dongle
+<ul>
+<li>connects thread network to PC</li>
+</ul>
+</li>
+<li>End devices - Beacons (2 dongles+1 arduino) - are children</li>
+<li>Lead device - arduino
+<ul>
+<li>uses coAP</li>
+<li>controls requests for REEDs to become routers</li>
+</ul>
+</li>
+</ul>
+<h3 id=attempt-1-communicate-rssi-based-on-hardware-layer-functions>Attempt 1: communicate RSSI based on hardware layer functions.<a hidden class=anchor aria-hidden=true href=#attempt-1-communicate-rssi-based-on-hardware-layer-functions>#</a></h3>
+<h3 id=attempt-2-udp-packets>Attempt 2: UDP packets<a hidden class=anchor aria-hidden=true href=#attempt-2-udp-packets>#</a></h3>
+<h3 id=attempt-3-use-mqtt-sn>Attempt 3: use mqtt-sn<a hidden class=anchor aria-hidden=true href=#attempt-3-use-mqtt-sn>#</a></h3>
+<ul>
+<li>Lightweight version of MQTT, using UDP</li>
+<li>Friendly for sensor networks (sleep mode, low energy, limited bandwidths)</li>
+<li>Requires a connection to a broker before being able to send/receive msgs</li>
+<li>Uses subscription based communication</li>
+<li>Publishes to a topic, other nodes can subscribe to the topic and receive the messages</li>
+</ul>
+<p>references:</p>
+<ul>
+<li><a href=https://www.u-blox.com/en/blogs/insights/mqtt-beginners-guide>ublox mqtt-sn beginner guide</a></li>
+<li><a href=http://www.steves-internet-guide.com/mqtt-sn/>steve&rsquo;s internet guide mqttsn</a></li>
+</ul>
+<h3 id=rssi-in-thread802154>RSSI in Thread/802.15.4<a hidden class=anchor aria-hidden=true href=#rssi-in-thread802154>#</a></h3>
+<p>Few functions/data structures to keep in mind:</p>
+<ul>
+<li><a href="https://infocenter.nordicsemi.com/index.jsp?topic=%2Fsdk_tz_v4.0.0%2Fstructot_neighbor_info.html&resultof=%22%72%73%73%69%22%20">otNeighborInfo Struct Reference</a></li>
+<li><a href="https://infocenter.nordicsemi.com/index.jsp?topic=%2Fsdk_tz_v4.0.0%2Fstructot_child_info.html&resultof=%22%72%73%73%69%22%20">otChildInfo Struct Reference</a></li>
+<li><a href="https://infocenter.nordicsemi.com/index.jsp?topic=%2Fsdk_tz_v4.0.0%2Fstructot_thread_parent_response_info.html&resultof=%22%72%73%73%69%22%20">otThreadParentResponseInfo Struct Reference</a></li>
+</ul>
+<h1 id=location-from-rssi>Location from RSSI<a hidden class=anchor aria-hidden=true href=#location-from-rssi>#</a></h1>
+<h2 id=initial-model-geomtrical-solution>Initial Model: Geomtrical Solution<a hidden class=anchor aria-hidden=true href=#initial-model-geomtrical-solution>#</a></h2>
+<ul>
+<li>Trilateration</li>
+</ul>
+<h2 id=improving-the-model-svm>Improving the Model: SVM<a hidden class=anchor aria-hidden=true href=#improving-the-model-svm>#</a></h2>
+<h3 id=deploying-the-updated-model-cmsis-libraries>Deploying the updated model: CMSIS Libraries<a hidden class=anchor aria-hidden=true href=#deploying-the-updated-model-cmsis-libraries>#</a></h3>
+<p><a href=https://developer.arm.com/documentation/102052/0000>How to implement SVM with CMSIS-DSP</a></p>
+<h1 id=experiments>Experiments<a hidden class=anchor aria-hidden=true href=#experiments>#</a></h1>
+</div>
+<footer class=post-footer>
+</footer>
+</article>
+</main>
+<footer class=footer>
+<span>&copy; 2021 <a href=//postliminal.github.io/ecem202a_project/>LOCALIZZACIONE</a></span>
+<span>
+Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://git.io/hugopapermod rel=noopener target=_blank>PaperMod</a>
+</span>
+</footer>
+<script>let menu=document.getElementById('menu');menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)},document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);window.matchMedia('(prefers-reduced-motion: reduce)').matches?document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${a}`)})})</script>
+<script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove('dark'),localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),localStorage.setItem("pref-theme",'dark'))})</script>
+</body>
+</html>
