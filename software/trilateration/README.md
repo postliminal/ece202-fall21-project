@@ -3,3 +3,4 @@ Trilateration is the determination of a navigation position methodology based on
 
 
 R. Faragher and R. Harle, "Location Fingerprinting With Bluetooth Low Energy Beacons," in IEEE Journal on Selected Areas in Communications, vol. 33, no. 11, pp. 2418-2428, Nov. 2015, doi: 10.1109/JSAC.2015.2430281.
+<img width="551" alt="Screen Shot 2021-12-05 at 11 54 49 AM" src="https://user-images.githubusercontent.com/88572004/144761593-f493f3af-e4d2-405f-89e6-de25e21859d5.png">
