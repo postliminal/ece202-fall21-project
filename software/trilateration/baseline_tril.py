@@ -1,5 +1,5 @@
 import numpy as np
-
+# https://www.alanzucconi.com/2017/03/13/positioning-and-trilateration/
 # distances d_x are measured by an RSSI signal
 # https://arc.aiaa.org/doi/pdf/10.2514/3.20169 algorithm implemented
 # reference https://stackoverflow.com/questions/56058383/i-want-to-implement-trilateration-in-python-i-cant-t-find-what-is-wrong-with-m
