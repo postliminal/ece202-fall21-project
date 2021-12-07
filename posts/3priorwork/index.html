@@ -1,0 +1,230 @@
+<!doctype html><html lang=en dir=auto>
+<head><meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta name=robots content="index, follow">
+<title>Prior Work | LOCALIZZACIONE</title>
+<meta name=keywords content>
+<meta name=description content="BLE 5.0 BLE Primer [Cite the 5.0 specification, 2 other papers, and nordic site]
+The Bluetooth specification provides a full stack solution for communication. Therefore, we don&rsquo;t need anything else to create the solution.
+[Figure of 37+3 adv channels and next to it overlay with wifi channels to show less interference in adv channels]
+Advertising By default occurs over channels 37, 38 and 39, which are spread out over the 2.">
+<meta name=author content="Edwin, Roy">
+<link rel=canonical href=//postliminal.github.io/ecem202a_project/posts/3priorwork/>
+<link crossorigin=anonymous href=/ecem202a_project/assets/css/stylesheet.min.5e2b4101351c21e906f398ae96901791830f58d430f96f2659dab7eaef7b3cb7.css integrity="sha256-XitBATUcIekG85iulpAXkYMPWNQw+W8mWdq36u97PLc=" rel="preload stylesheet" as=style>
+<script defer crossorigin=anonymous src=/ecem202a_project/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5+kdJvBz5iKbt6B5PJI=" onload=hljs.initHighlightingOnLoad()></script>
+<link rel=icon href=//postliminal.github.io/ecem202a_project/favicon.ico>
+<link rel=icon type=image/png sizes=16x16 href=//postliminal.github.io/ecem202a_project/favicon-16x16.png>
+<link rel=icon type=image/png sizes=32x32 href=//postliminal.github.io/ecem202a_project/favicon-32x32.png>
+<link rel=apple-touch-icon href=//postliminal.github.io/ecem202a_project/apple-touch-icon.png>
+<link rel=mask-icon href=//postliminal.github.io/ecem202a_project/safari-pinned-tab.svg>
+<meta name=theme-color content="#2e2e33">
+<meta name=msapplication-TileColor content="#2e2e33">
+<meta name=generator content="Hugo 0.89.4">
+<noscript>
+<style>#theme-toggle,.top-link{display:none}</style>
+<style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style>
+</noscript><meta property="og:title" content="Prior Work">
+<meta property="og:description" content="BLE 5.0 BLE Primer [Cite the 5.0 specification, 2 other papers, and nordic site]
+The Bluetooth specification provides a full stack solution for communication. Therefore, we don&rsquo;t need anything else to create the solution.
+[Figure of 37+3 adv channels and next to it overlay with wifi channels to show less interference in adv channels]
+Advertising By default occurs over channels 37, 38 and 39, which are spread out over the 2.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="//postliminal.github.io/ecem202a_project/posts/3priorwork/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2021-11-01T01:26:43-07:00">
+<meta property="article:modified_time" content="2021-11-01T01:26:43-07:00"><meta property="og:site_name" content="ExampleSite">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="Prior Work">
+<meta name=twitter:description content="BLE 5.0 BLE Primer [Cite the 5.0 specification, 2 other papers, and nordic site]
+The Bluetooth specification provides a full stack solution for communication. Therefore, we don&rsquo;t need anything else to create the solution.
+[Figure of 37+3 adv channels and next to it overlay with wifi channels to show less interference in adv channels]
+Advertising By default occurs over channels 37, 38 and 39, which are spread out over the 2.">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"//postliminal.github.io/ecem202a_project/posts/"},{"@type":"ListItem","position":2,"name":"Prior Work","item":"//postliminal.github.io/ecem202a_project/posts/3priorwork/"}]}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Prior Work","name":"Prior Work","description":"BLE 5.0 BLE Primer [Cite the 5.0 specification, 2 other papers, and nordic site]\nThe Bluetooth specification provides a full stack solution for communication. Therefore, we don\u0026rsquo;t need anything else to create the solution.\n[Figure of 37+3 adv channels and next to it overlay with wifi channels to show less interference in adv channels]\nAdvertising By default occurs over channels 37, 38 and 39, which are spread out over the 2.","keywords":[],"articleBody":"BLE 5.0 BLE Primer [Cite the 5.0 specification, 2 other papers, and nordic site]\nThe Bluetooth specification provides a full stack solution for communication. Therefore, we don’t need anything else to create the solution.\n[Figure of 37+3 adv channels and next to it overlay with wifi channels to show less interference in adv channels]\nAdvertising By default occurs over channels 37, 38 and 39, which are spread out over the 2.4MHz band, and are precisely located at the edges of the wifi band to help reduce wifi interference.\nWith the nordic SDK, advertisements can be precisely configured with various settings. We’ll explore the use of the following:\n Window size RSSI dB filtering Advertising interval  RSSI Received Signal Strength Indicator. This value measures the received signal strength in dB and can be used to esitmate the distance of the receiver from the transmitter device.\nThe RSSI is represented using a byte inside of the manufacturer specific data.\nThread and OpenThread Summary   Operates on top of 802.15.4 (which handles PHY and MAC).\n  Intended for IoT and home automation situations\n  Thread at its core: ipv6 based peer-to-peer mesh network\n  ipv6 means good performance and reliability\n  Thread implements UDP, IP Routing and 6LoWPAN.\n  Self healing and self maintaining network\n Readjust if you add devices or move them around    Ref: electroniclinic\nThread Primer [Cite the openthread website, 2 other papers, and nordic site]\nExploration:  nordic cli example github issue  Leader (FTD):\n  reset   dataset init new Done  dataset commit active Done  dataset active Active Timestamp: 1 Channel: 15 Channel Mask: 07fff800 Ext PAN ID: ab6f0f99db116ec3 Mesh Local Prefix: fd19:ea13:f1fa:e501/64 Master Key: 1222558b01070cb6211ae2ad888f9429 Network Name: OpenThread-096e PAN ID: 0x096e PSKc: c2d539fc2f64b8b56713de1de2f6de8f Security Policy: 0, onrcb Done  ifconfig up Done  thread start Done  state detached Done  state detached Done  state leader Done  Slave (MTD):\n  reset   dataset clear Done  dataset masterkey 1222558b01070cb6211ae2ad888f9429 Done  dataset commit active Done  dataset active Master Key: 1222558b01070cb6211ae2ad888f9429 Done  ifconfig up Done  thread start Done  state detached Done  state detached Done  state detached Done  state detached Done  state child Done  CLI commands:\n  child 1 Child ID: 1 Rloc: 5401 Ext Addr: 53e8f050a7d4a7dd Mode: rsdn Net Data: 183 Timeout: 240 Age: 220 Link Quality In: 3 RSSI: -18 Done  rloc16 1000 (if router) 1001 (if child)  From github ot-thread: “Discovering the location of services is a common problem in an IP-based network”\n","wordCount":"411","inLanguage":"en","datePublished":"2021-11-01T01:26:43-07:00","dateModified":"2021-11-01T01:26:43-07:00","author":[{"@type":"Person","name":"Edwin"},{"@type":"Person","name":"Roy"}],"mainEntityOfPage":{"@type":"WebPage","@id":"//postliminal.github.io/ecem202a_project/posts/3priorwork/"},"publisher":{"@type":"Organization","name":"LOCALIZZACIONE","logo":{"@type":"ImageObject","url":"//postliminal.github.io/ecem202a_project/favicon.ico"}}}</script>
+</head>
+<body id=top>
+<script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
+<header class=header>
+<nav class=nav>
+<div class=logo>
+<a href=//postliminal.github.io/ecem202a_project/ accesskey=h title="LOCALIZZACIONE (Alt + H)">LOCALIZZACIONE</a>
+<span class=logo-switches>
+<button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+</button>
+</span>
+</div>
+<ul id=menu>
+<li>
+<a href=//postliminal.github.io/ecem202a_project/ title=project>
+<span>project</span>
+</a>
+</li>
+<li>
+<a href=//postliminal.github.io/ecem202a_project/contact/ title="contact us">
+<span>contact us</span>
+</a>
+</li>
+</ul>
+</nav>
+</header>
+<main class=main>
+<article class=post-single>
+<header class=post-header>
+<h1 class=post-title>
+Prior Work
+</h1>
+<div class=post-meta>November 1, 2021&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Edwin, Roy
+</div>
+</header>
+<div class=post-content>
+<h1 id=ble-50>BLE 5.0<a hidden class=anchor aria-hidden=true href=#ble-50>#</a></h1>
+<h3 id=ble-primer>BLE Primer<a hidden class=anchor aria-hidden=true href=#ble-primer>#</a></h3>
+<p>[Cite the 5.0 specification, 2 other papers, and nordic site]</p>
+<p>The Bluetooth specification provides a full stack solution for communication. Therefore, we don&rsquo;t need anything else to create the solution.</p>
+<p>[Figure of 37+3 adv channels and next to it overlay with wifi channels to show less interference in adv channels]</p>
+<h3 id=advertising>Advertising<a hidden class=anchor aria-hidden=true href=#advertising>#</a></h3>
+<p>By default occurs over channels 37, 38 and 39, which are spread out over the 2.4MHz band, and are precisely located at the edges of the wifi band to help reduce wifi interference.</p>
+<p>With the nordic SDK, advertisements can be precisely configured with various settings. We&rsquo;ll explore the use of the following:</p>
+<ul>
+<li>Window size</li>
+<li>RSSI dB filtering</li>
+<li>Advertising interval</li>
+</ul>
+<h3 id=rssi>RSSI<a hidden class=anchor aria-hidden=true href=#rssi>#</a></h3>
+<p>Received Signal Strength Indicator. This value measures the received signal strength in dB and can be used to esitmate the distance of the receiver from the transmitter device.</p>
+<p>The RSSI is represented using a byte inside of the manufacturer specific data.</p>
+<h1 id=thread-and-openthread>Thread and OpenThread<a hidden class=anchor aria-hidden=true href=#thread-and-openthread>#</a></h1>
+<h3 id=summary>Summary<a hidden class=anchor aria-hidden=true href=#summary>#</a></h3>
+<ul>
+<li>
+<p>Operates on top of 802.15.4 (which handles PHY and MAC).</p>
+</li>
+<li>
+<p>Intended for IoT and home automation situations</p>
+</li>
+<li>
+<p>Thread at its core: ipv6 based peer-to-peer mesh network</p>
+</li>
+<li>
+<p>ipv6 means good performance and reliability</p>
+</li>
+<li>
+<p>Thread implements UDP, IP Routing and 6LoWPAN.</p>
+</li>
+<li>
+<p>Self healing and self maintaining network</p>
+<ul>
+<li>Readjust if you add devices or move them around</li>
+</ul>
+</li>
+</ul>
+<p>Ref: <a href=https://www.electroniclinic.com/thread-protocol-architecture-and-topology-fully-explained/>electroniclinic</a></p>
+<h2 id=thread-primer>Thread Primer<a hidden class=anchor aria-hidden=true href=#thread-primer>#</a></h2>
+<p><img loading=lazy src=/ecem202a_project/images/thread_stack.png#center alt=img1>
+</p>
+<p>[Cite the openthread website, 2 other papers, and nordic site]</p>
+<h3 id=exploration>Exploration:<a hidden class=anchor aria-hidden=true href=#exploration>#</a></h3>
+<ul>
+<li><a href="https://infocenter.nordicsemi.com/index.jsp?topic=%2Fsdk_tz_v4.1.0%2Fthread_cli_example.html">nordic cli example</a></li>
+<li><a href=https://github.com/openthread/openthread/issues/4036>github issue</a></li>
+</ul>
+<p>Leader (FTD):</p>
+<pre><code>    &gt; reset
+    &gt;
+    &gt; dataset init new
+    Done
+    &gt; dataset commit active
+    Done
+    &gt; dataset active
+    Active Timestamp: 1
+    Channel: 15
+    Channel Mask: 07fff800
+    Ext PAN ID: ab6f0f99db116ec3
+    Mesh Local Prefix: fd19:ea13:f1fa:e501/64
+    Master Key: 1222558b01070cb6211ae2ad888f9429
+    Network Name: OpenThread-096e
+    PAN ID: 0x096e
+    PSKc: c2d539fc2f64b8b56713de1de2f6de8f
+    Security Policy: 0, onrcb
+    Done
+    &gt; ifconfig up
+    Done
+    &gt; thread start
+    Done
+    &gt; state
+    detached
+    Done
+    &gt; state
+    detached
+    Done
+    &gt; state
+    leader
+    Done
+</code></pre>
+<p>Slave (MTD):</p>
+<pre><code>    &gt; reset
+    &gt; 
+    &gt; dataset clear
+    Done
+    &gt; dataset masterkey 1222558b01070cb6211ae2ad888f9429
+    Done
+    &gt; dataset commit active
+    Done
+    &gt; dataset active
+    Master Key: 1222558b01070cb6211ae2ad888f9429
+    Done
+    &gt; ifconfig up
+    Done
+    &gt; thread start
+    Done
+    &gt; state
+    detached
+    Done
+    &gt; state
+    detached
+    Done
+    &gt; state
+    detached
+    Done
+    &gt; state
+    detached
+    Done
+    &gt; state
+    child
+    Done
+</code></pre>
+<p>CLI commands:</p>
+<pre><code>    &gt; child 1
+    Child ID: 1
+    Rloc: 5401
+    Ext Addr: 53e8f050a7d4a7dd
+    Mode: rsdn
+    Net Data: 183
+    Timeout: 240
+    Age: 220
+    Link Quality In: 3
+    RSSI: -18
+    Done
+    &gt; rloc16
+    1000 (if router)
+    1001 (if child)
+</code></pre>
+<p>From github <a href=https://github.com/openthread/openthread/issues/4918>ot-thread</a>:
+&ldquo;Discovering the location of services is a common problem in an IP-based network&rdquo;</p>
+</div>
+<footer class=post-footer>
+</footer>
+</article>
+</main>
+<footer class=footer>
+<span>&copy; 2021 <a href=//postliminal.github.io/ecem202a_project/>LOCALIZZACIONE</a></span>
+<span>
+Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://git.io/hugopapermod rel=noopener target=_blank>PaperMod</a>
+</span>
+</footer>
+<script>let menu=document.getElementById('menu');menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)},document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);window.matchMedia('(prefers-reduced-motion: reduce)').matches?document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${a}`)})})</script>
+<script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove('dark'),localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),localStorage.setItem("pref-theme",'dark'))})</script>
+</body>
+</html>

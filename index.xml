@@ -27,6 +27,18 @@ Project Goals: Make an updated analysis between these two protocols. By using va
     </item>
     
     <item>
+      <title>Prior Work</title>
+      <link>//postliminal.github.io/ecem202a_project/posts/3priorwork/</link>
+      <pubDate>Mon, 01 Nov 2021 01:26:43 -0700</pubDate>
+      
+      <guid>//postliminal.github.io/ecem202a_project/posts/3priorwork/</guid>
+      <description>BLE 5.0 BLE Primer [Cite the 5.0 specification, 2 other papers, and nordic site]
+The Bluetooth specification provides a full stack solution for communication. Therefore, we don&amp;rsquo;t need anything else to create the solution.
+[Figure of 37+3 adv channels and next to it overlay with wifi channels to show less interference in adv channels]
+Advertising By default occurs over channels 37, 38 and 39, which are spread out over the 2.</description>
+    </item>
+    
+    <item>
       <title>Design</title>
       <link>//postliminal.github.io/ecem202a_project/posts/4design/</link>
       <pubDate>Mon, 01 Nov 2021 01:26:43 -0700</pubDate>
