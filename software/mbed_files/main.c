@@ -105,8 +105,9 @@ int32_t main(void)
   S.classPriors = classPriors;    
   S.epsilon=4.328939296523643e-09f; 
 
-  in[0] = 1.5f;
-  in[1] = 1.0f;
+  in[0] = -0.0f;
+  in[1] = -1.0f;
+  in[2] = 1.0f;
 
   index = arm_gaussian_naive_bayes_predict_f32(&S, in, result);
 
@@ -118,7 +119,7 @@ int32_t main(void)
 
   in[0] =-0.8f;
   in[1] = -1.0f;
-  in[1] = 1.0f; 
+  in[2] = 1.0f; 
 
   index = arm_gaussian_naive_bayes_predict_f32(&S, in, result);
 
@@ -130,7 +131,7 @@ int32_t main(void)
   
   in[0] = -1.0f;
   in[1] = -1.0f;
-  in[1] = 1.0f;
+  in[2] = 1.0f;
 
   index = arm_gaussian_naive_bayes_predict_f32(&S, in, result);
 
