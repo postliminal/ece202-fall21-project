@@ -1,3 +1,5 @@
+#reference https://github.com/slaninam/Loc1D for initial datasets used
+#refernce https://developer.arm.com/documentation/102052/0000/Train-your-Bayesian-estimator-with-scikit-learn for making code configurable on mbed
 from google.colab import drive
 drive.mount('/content/Mydrive/')
 
