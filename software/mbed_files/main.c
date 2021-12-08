@@ -90,7 +90,7 @@ const float32_t classPriors[NB_OF_CLASSES] = {
 int32_t main(void)
 {
   /* Array of input data */
-  float32_t in[2];
+  float32_t in[3];
 
   /* Result of the classifier */
   float32_t result[NB_OF_CLASSES];
@@ -116,8 +116,9 @@ int32_t main(void)
   printf("Class = %d\n", index);
 #endif
 
-  in[0] = -1.5f;
-  in[1] = 1.0f;
+  in[0] =-0.8f;
+  in[1] = -1.0f;
+  in[1] = 1.0f; 
 
   index = arm_gaussian_naive_bayes_predict_f32(&S, in, result);
 
@@ -126,9 +127,10 @@ int32_t main(void)
 #if defined(SEMIHOSTING)
   printf("Class = %d\n", index);
 #endif
-
-  in[0] = 0.0f;
-  in[1] = -3.0f;
+  
+  in[0] = -1.0f;
+  in[1] = -1.0f;
+  in[1] = 1.0f;
 
   index = arm_gaussian_naive_bayes_predict_f32(&S, in, result);
 
