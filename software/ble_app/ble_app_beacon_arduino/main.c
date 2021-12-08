@@ -146,8 +146,7 @@ static void advertising_init(void)
 {
     uint32_t      err_code;
     ble_advdata_t advdata;
-    uint8_t       flags = BLE_GAP_ADV_FLAG_BR_EDR_NOT_SUPPORTED; // ------------------------- FLAG FOR TYPE OF BEACON --------------
-    //uint8_t       flags = BLE_GAP_ADV_FLAGS_LE_ONLY_GENERAL_DISC_MODE; // ------------------------- FLAG FOR TYPE OF BEACON --------------
+    uint8_t       flags = BLE_GAP_ADV_FLAG_BR_EDR_NOT_SUPPORTED;
 
     ble_advdata_manuf_data_t manuf_specific_data;
 
@@ -182,9 +181,6 @@ static void advertising_init(void)
     memset(&advdata, 0, sizeof(advdata));
 
     advdata.name_type             = BLE_ADVDATA_NO_NAME;
-    //advdata.name_type             = BLE_ADVDATA_FULL_NAME; // --- using this instead causes project to stop working
-                                                             //     might be because APP_BEACON_INFO_LENGTH is too small
-                                                             //     to hold full name rn.
     advdata.flags                 = flags;
     advdata.p_manuf_specific_data = &manuf_specific_data;
 
@@ -227,7 +223,7 @@ static void ble_stack_init(void)
 {
     ret_code_t err_code;
 
-    err_code = nrf_sdh_enable_request(); // ----------------- request to enable softdevice
+    err_code = nrf_sdh_enable_request();
     APP_ERROR_CHECK(err_code);
 
     // Configure the BLE stack using the default settings.
@@ -255,7 +251,6 @@ static void log_init(void)
 static void leds_init(void)
 {
     ret_code_t err_code = bsp_init(BSP_INIT_LEDS, NULL);
-
     APP_ERROR_CHECK(err_code);
 }
 

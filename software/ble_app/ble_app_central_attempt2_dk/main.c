@@ -29,6 +29,8 @@
 #include "nrf_log_ctrl.h"
 #include "nrf_log_default_backends.h"
 
+#include "nrf_ringbuf.h"
+
 
 #define APP_BLE_CONN_CFG_TAG      1                                     /**< Tag that refers to the BLE stack configuration that is set with @ref sd_ble_cfg_set. The default tag is @ref APP_BLE_CONN_CFG_TAG. */
 #define APP_BLE_OBSERVER_PRIO     3                                     /**< BLE observer priority of the application. There is no need to modify this value. */
@@ -48,25 +50,26 @@ NRF_BLE_GQ_DEF(m_ble_gatt_queue,                                        /**< BLE
                NRF_SDH_BLE_CENTRAL_LINK_COUNT,
                NRF_BLE_GQ_QUEUE_SIZE);
 
-//static char const m_target_periph_name[] = "Nordic_Blinky";             /**< Name of the device to try to connect to. This name is searched for in the scanning report data. */
+// -----------------------------------------------------------------------------  ADDED STUFF #1:
 
-
-// ---------------------------------------------  ADDED STUFF
-
-#define SCAN_DURATION_UNLIMITED 3000
+#define SCAN_DURATION_LIMITED 3000
 
 static ble_gap_addr_t const m_addr_1 = 
 {
-  //.addr = {0xd6,0xf3,0x36,0xc2,0xf2,0x7b}, //MSB format
   .addr = {0x7b,0xf2,0xc2,0x36,0xf3,0xd6}, //LSB format
   .addr_type = BLE_GAP_ADDR_TYPE_RANDOM_STATIC,
 };
 
-static nrf_ble_scan_addr_filter_t const m_addr_params = 
+static ble_gap_addr_t const m_addr_2 = 
 {
-  .addr_cnt = 1,
-  .addr_filter_enabled = 1,
-  .target_addr = m_addr_1,  // https://infocenter.nordicsemi.com/index.jsp?topic=%2Fcom.nordic.infocenter.s140.api.v7.2.0%2Fstructble__gap__addr__t.html
+  .addr = {0x8b,0xe1,0xe5,0x20,0x43,0xe6}, //LSB format
+  .addr_type = BLE_GAP_ADDR_TYPE_RANDOM_STATIC,
+};
+
+static ble_gap_addr_t const m_addr_3 = 
+{
+  .addr = {0xe7,0xad,0xe9,0x03,0x6b,0xd4}, //LSB format
+  .addr_type = BLE_GAP_ADDR_TYPE_RANDOM_STATIC,
 };
 
 /**< Scan parameters requested for scanning and connection. */
@@ -76,9 +79,20 @@ static ble_gap_scan_params_t const m_scan_param =
     .interval      = NRF_BLE_SCAN_SCAN_INTERVAL,
     .window        = NRF_BLE_SCAN_SCAN_WINDOW, // scan window in 625us units
     .filter_policy = BLE_GAP_SCAN_FP_ACCEPT_ALL,
-    .timeout       = SCAN_DURATION_UNLIMITED, // timeout disabled
+    .timeout       = BLE_GAP_SCAN_TIMEOUT_UNLIMITED,
     .scan_phys     = BLE_GAP_PHY_1MBPS,
 };
+
+NRF_RINGBUF_DEF(m_ringbuf_beacon1, 64);
+NRF_RINGBUF_DEF(m_ringbuf_beacon2, 64);
+NRF_RINGBUF_DEF(m_ringbuf_beacon3, 64);
+
+int8_t beacon_buf1[4] = {0};
+int8_t beacon_buf2[4] = {0};
+int8_t beacon_buf3[4] = {0};
+uint8_t counter1 = 0;
+uint8_t counter2 = 0;
+uint8_t counter3 = 0;
 
 // ---------------------------------------------  ADDED STUFF
 
@@ -120,6 +134,7 @@ static void leds_init(void)
     bsp_board_init(BSP_INIT_LEDS);
 }
 
+// ------------------------------------------------------------------------ custom filter handler func
 
 static void scan_evt_handler(scan_evt_t const * p_scan_evt)
 {
@@ -131,18 +146,41 @@ static void scan_evt_handler(scan_evt_t const * p_scan_evt)
 
     switch(p_scan_evt->scan_evt_id)
     {
-        case NRF_BLE_SCAN_EVT_CONNECTING_ERROR:
+        case NRF_BLE_SCAN_EVT_FILTER_MATCH: 
         {
-            err_code = p_scan_evt->params.connecting_err.err_code;
-            APP_ERROR_CHECK(err_code);
-        } break;
-
-        case NRF_BLE_SCAN_EVT_FILTER_MATCH: // example use in ble_central/ble_app_gatts/main.c
-        // see also ble_central_and_perihperal/experimantal/ble_app_att_mtu_throughput/main.c
-        {
-            NRF_LOG_INFO("NRF_BLE_SCAN_EVT_FILTER_MATCH !! %d", (int8_t)p_adv->rssi);
-            // RSSI IS HERE!!!!!! SHE HAS ARRIVED!!!!
-            // p_adv->rssi
+            //NRF_LOG_INFO("ADDRESS !! %02X:%02X:%02X:%02X:%02X:%02X", p_adv->peer_addr.addr[5],p_adv->peer_addr.addr[4],p_adv->peer_addr.addr[3],p_adv->peer_addr.addr[2],p_adv->peer_addr.addr[1],p_adv->peer_addr.addr[0]);
+            //NRF_LOG_INFO("NRF_BLE_SCAN_EVT_FILTER_MATCH !! %d", (int8_t)p_adv->rssi);
+            switch(p_adv->peer_addr.addr[5])
+            {
+              case 0xd6:
+              {
+                beacon_buf1[counter1%4] = p_adv->rssi;
+                counter1++;
+                //NRF_LOG_INFO("found beacon1");
+                //int8_t* cur_rssi = (int8_t*)&p_adv->rssi;
+                //size_t len_in = sizeof(*cur_rssi);
+                //err_code = nrf_ringbuf_cpy_put(&m_ringbuf_beacon1, cur_rssi, &len_in);
+              } break;
+              case 0xe6:
+              {
+                //NRF_LOG_INFO("found beacon2");
+                beacon_buf2[counter2%4] = p_adv->rssi;
+                counter2++;
+                //int8_t* cur_rssi = (int8_t*)&p_adv->rssi;
+                //size_t len_in = sizeof(*cur_rssi);
+                //err_code = nrf_ringbuf_cpy_put(&m_ringbuf_beacon2, cur_rssi, &len_in);
+              } break;
+              case 0xd4:
+              {
+                //NRF_LOG_INFO("found beacon3");
+                beacon_buf3[counter3%4] = p_adv->rssi;
+                counter3++;
+                //int8_t* cur_rssi = (int8_t*)&p_adv->rssi;
+                //size_t len_in = sizeof(*cur_rssi);
+                //err_code = nrf_ringbuf_cpy_put(&m_ringbuf_beacon3, cur_rssi, &len_in);
+              } break;
+            }
+            // --------------------------
             //APP_ERROR_CHECK(err_code);
         } break;
 
@@ -151,7 +189,7 @@ static void scan_evt_handler(scan_evt_t const * p_scan_evt)
     }
 }
 
-// custom filter func ---------------------------------------------------------------------
+// ------------------------------------------------------------------------ custom filter handler func
 
 /**@brief Function for initializing the scanning and setting the filters.
  */
@@ -169,9 +207,11 @@ static void scan_init(void)
     err_code = nrf_ble_scan_init(&m_scan, &init_scan, scan_evt_handler);
     APP_ERROR_CHECK(err_code);
 
-    // FILTERING BY ADDRESS: ------------------
+    // ------------------------------------------------------------------------ FILTERING BY ADDRESS: 
 
     err_code = nrf_ble_scan_filter_set(&m_scan, SCAN_ADDR_FILTER, m_addr_1.addr);
+    err_code = nrf_ble_scan_filter_set(&m_scan, SCAN_ADDR_FILTER, m_addr_2.addr);
+    err_code = nrf_ble_scan_filter_set(&m_scan, SCAN_ADDR_FILTER, m_addr_3.addr);
     APP_ERROR_CHECK(err_code);
 
     err_code = nrf_ble_scan_filters_enable(&m_scan, NRF_BLE_SCAN_ADDR_FILTER, false);
@@ -239,20 +279,6 @@ static void lbs_c_evt_handler(ble_lbs_c_t * p_lbs_c, ble_lbs_c_evt_t * p_lbs_c_e
     }
 }
 
-// ----------------CODE FROM BLE_CENTRAL_AND_PERIPHERAL/EXPERIMENTAL/BLE_APP_INTERACTIVE/BLE_M.C 
-/**@brief Function for displaying an address in HEX format.
- */
-static void hex_addr_display(uint8_t const * p_addr, size_t size){
-    NRF_LOG_RAW_INFO("Connected to address: ");
-    for (uint8_t i = 0; i < size; ++i){
-        NRF_LOG_RAW_INFO("%.2X ", p_addr[size - (i + 1)]);
-    }
-    NRF_LOG_RAW_INFO("\r\n");
-}
-
-// -------------END-CODE FROM BLE_CENTRAL_AND_PERIPHERAL/EXPERIMENTAL/BLE_APP_INTERACTIVE/BLE_M.C 
-
-
 /**@brief Function for handling BLE events.
  *
  * @param[in]   p_ble_evt   Bluetooth stack event.
@@ -268,40 +294,6 @@ static void ble_evt_handler(ble_evt_t const * p_ble_evt, void * p_context)
     switch (p_ble_evt->header.evt_id)
     {
         
-        // CUSTOM CODE_--------------------------------------------------------------------------------
-        case BLE_GAP_EVT_ADV_REPORT:
-        { // see example use in taken from ble_central/ble_app_gatts/main.c
-        NRF_LOG_DEBUG("INSIDE OF ble_evt_handler -> BLE_GAP_EVT_ADV_REPORT", err_code);
-            //if (is_address_compare(&p_gap_evt->params.adv_report.peer_addr,
-            //                       m_addr_str_for_connection))
-            //{
-            //    memset(m_addr_str_for_connection, 0, sizeof(m_addr_str_for_connection));
-
-            //    // Initiate connection.
-            //    NRF_LOG_INFO("CENTRAL: Connecting...");
-            //    err_code = sd_ble_gap_connect(&p_gap_evt->params.adv_report.peer_addr,
-            //                                  &m_scan.scan_params, 
-            //                                  &m_connection_param,
-            //                                  APP_BLE_CONN_CFG_TAG);
-
-            //    if (err_code != NRF_SUCCESS)
-            //    {
-            //        NRF_LOG_DEBUG("Connection Request Failed, reason %d", err_code);
-            //        return;
-            //    }
-            //}
-
-            // If pairing request in NFC central role, then compare data and connect.
-            //nfc_central_connect(p_gap_evt, p_peer_addr);
-
-            //// Add device address and name (if exists) from the scan report to dynamic CLI command.
-            //device_to_list_add(&p_gap_evt->params.adv_report);
-            //address_to_cmd_add(&p_gap_evt->params.adv_report.peer_addr);
-        }
-        break; // BLE_GAP_ADV_REPORT
-
-         // END CUSTOM CODE_--------------------------------------------------------------------------------
-
         // Upon connection, check which peripheral is connected, initiate DB
         // discovery, update LEDs status, and resume scanning, if necessary.
         case BLE_GAP_EVT_CONNECTED:
@@ -615,6 +607,16 @@ static void gatt_init(void)
     APP_ERROR_CHECK(err_code);
 }
 
+/**@brief Function for predicting location.
+ */
+static void get_location()
+{
+    for(int i=0;i<4;i++){
+      NRF_LOG_INFO("%d, %d, %d", beacon_buf1[i], beacon_buf2[i], beacon_buf3[i]);
+    }
+
+}
+
 
 int main(void)
 {
@@ -624,6 +626,7 @@ int main(void)
     leds_init();
     buttons_init();
     power_management_init();
+
     ble_stack_init();
     gatt_init();
     db_discovery_init();
@@ -637,6 +640,13 @@ int main(void)
 
     for (;;)
     {
+    for(int i=0;i<20;i++)
+    {
         idle_state_handle();
+    }
+
+    // todo - call this via timer/interrupt
+    get_location();
+
     }
 }

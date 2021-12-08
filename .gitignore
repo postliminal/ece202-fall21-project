@@ -5,6 +5,10 @@ software/openthread_app/openthread_ncp_dongle/Output/Debug/Obj/*
 software/openthread_app/openthread_ncp_dongle/Output/Release/Obj/*
 software/ble_app/ble_app_beacon_dongle/Output/Release/Obj/*
 software/ble_app/ble_app_beacon_dongle/Output/Debug/Obj/*
+software/ble_app/ble_app_beacon_arduino/Output/Release/Obj/*
+software/ble_app/ble_app_beacon_arduino/Output/Debug/Obj/*
+software/ble_app/ble_app_beacon_dk/Output/Release/Obj/*
+software/ble_app/ble_app_beacon_dk/Output/Debug/Obj/*
 software/ble_app/ble_app_central_attempt2_dk/Output/Release/Obj/*
 software/ble_app/ble_app_central_attempt2_dk/Output/Debug/Obj/*
 software/python/py_ble/.ipynb_checkpoints
