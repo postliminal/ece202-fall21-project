@@ -6,7 +6,7 @@
     <description>Recent content on LOCALIZZACIONE</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Dec 2021 01:26:06 -0700</lastBuildDate><atom:link href="//postliminal.github.io/ecem202a_project/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Dec 2021 03:02:21 -0800</lastBuildDate><atom:link href="//postliminal.github.io/ecem202a_project/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Proposal</title>
       <link>//postliminal.github.io/ecem202a_project/posts/0proposal/</link>
@@ -44,7 +44,40 @@ Project Goals: Make an updated analysis between these two protocols. By using va
       <guid>//postliminal.github.io/ecem202a_project/posts/4design/</guid>
       <description>[image 1] - should be showing 3 beacons, a central device, and maybe a PC? Plus X-Y coordinates and roughly spatial distance. DO NOT INCLUDE specific ble or openthread specs/terms/concepts.
 Contents  Hardware Platforms Software Stack BLE Application OpenThread Application Location from RSSI Experiments  The Hardware Platform The SoC: Nordic nRF52840 [images of boards?]
- (2x) Arduino Nano Sense 33 BLE  Beacon 1 MAC: Central MAC: D4:6B:03:E9:AD:E7   (2x) nRF52840 Dongle  Beacon 2 MAC: Beacon 3 MAC:   (1x) nRF52840 Development Kit  The Software Stack Embedded Software Development:  Segger Embedded Studio nRF5 SDK &amp;amp; nRF5 SDK for Thread and Zigbee nRF Connect+Programmer for flashing code CMSIS Libraries for Arm Cortex M microcontrollers  Utilities and Other tools:  Python + Matplotlib nRF BLE Sniffer nRF 802.</description>
+ (2x) Arduino Nano Sense 33 BLE  Beacon 1 MAC:   (2x) nRF52840 Dongle  Beacon 2 MAC: Beacon 3 MAC:   (1x) nRF52840 Development Kit  Central device (polls beacons)    The Software Stack Embedded Software Development:  Segger Embedded Studio nRF5 SDK &amp;amp; nRF5 SDK for Thread and Zigbee nRF Connect+Programmer for flashing code CMSIS Libraries for Arm Cortex M microcontrollers  Utilities and Other tools:  Python + Matplotlib nRF BLE Sniffer nRF 802.</description>
+    </item>
+    
+    <item>
+      <title>Results</title>
+      <link>//postliminal.github.io/ecem202a_project/posts/5results/</link>
+      <pubDate>Mon, 01 Nov 2021 01:26:43 -0700</pubDate>
+      
+      <guid>//postliminal.github.io/ecem202a_project/posts/5results/</guid>
+      <description>_we only need to do a few sweeps and we get something worth _
+1. Noisy measurements of RSSI in BLE and 802.15.4  python plots  if possible have multiple adv channels and compare aggregate/default/average   explanation could do some signal analysis (variance, etc?)  2. Localization results (BLE vs. Thread) Current narrative:
+  thread is not meant for this application
+ self healing/automated network changes structure give example of applications meant for thread    unable to disable exponential backoff when using otGetNeighborinfo without having to recompile the libraries manually</description>
+    </item>
+    
+    <item>
+      <title>References</title>
+      <link>//postliminal.github.io/ecem202a_project/posts/6references/</link>
+      <pubDate>Mon, 01 Nov 2021 01:26:43 -0700</pubDate>
+      
+      <guid>//postliminal.github.io/ecem202a_project/posts/6references/</guid>
+      <description>NICELY FORMATTED, WITH NUMBERS, MLA or just copy the &amp;ldquo;how to cite&amp;rdquo; button </description>
+    </item>
+    
+    <item>
+      <title>5_5futurework</title>
+      <link>//postliminal.github.io/ecem202a_project/posts/5_5futurework/</link>
+      <pubDate>Fri, 10 Dec 2021 03:02:21 -0800</pubDate>
+      
+      <guid>//postliminal.github.io/ecem202a_project/posts/5_5futurework/</guid>
+      <description>Everything that we weren&amp;rsquo;t able to do we can include it here nicely and explain what went wrong   branches we didn&amp;rsquo;t get to combine
+ multitask wakework recog task    any future config changes
+ the sweeps or other sweeps    any processing that could improve results
+  include timeline? list of tasks? automation of parameters  could be directly applied to neural architecture search of future models that use peripherals?</description>
     </item>
     
     <item>
