@@ -29,13 +29,11 @@ Project Goals: Make an updated analysis between these two protocols. By using va
     <item>
       <title>Prior Work</title>
       <link>//postliminal.github.io/ecem202a_project/posts/3priorwork/</link>
-      <pubDate>Mon, 01 Nov 2021 01:26:43 -0700</pubDate>
+      <pubDate>Wed, 01 Dec 2021 01:26:43 -0700</pubDate>
       
       <guid>//postliminal.github.io/ecem202a_project/posts/3priorwork/</guid>
-      <description>BLE 5.0 BLE Primer [Cite the 5.0 specification, 2 other papers, and nordic site]
-The Bluetooth specification provides a full stack solution for communication. Therefore, we don&amp;rsquo;t need anything else to create the solution.
-[Figure of 37+3 adv channels and next to it overlay with wifi channels to show less interference in adv channels]
-Advertising By default occurs over channels 37, 38 and 39, which are spread out over the 2.</description>
+      <description>Bluetooth - BLE 5.0 A wireless communication protocol that is (almost if not already) ubiquitous. Released in 2016, BLE 5.0 introduced a few changes that make bluetooth technology suitable for more applications. New features allow:
+ larger bandwidth transmissions (higher throughput = higher data speeds) multi device connection (e.g. now you can send music to two pairs of headphones from one device) larger advertising packets allow better pairing + other applications (beacons!</description>
     </item>
     
     <item>
@@ -46,7 +44,7 @@ Advertising By default occurs over channels 37, 38 and 39, which are spread out 
       <guid>//postliminal.github.io/ecem202a_project/posts/4design/</guid>
       <description>[image 1] - should be showing 3 beacons, a central device, and maybe a PC? Plus X-Y coordinates and roughly spatial distance. DO NOT INCLUDE specific ble or openthread specs/terms/concepts.
 Contents  Hardware Platforms Software Stack BLE Application OpenThread Application Location from RSSI Experiments  The Hardware Platform The SoC: Nordic nRF52840 [images of boards?]
- (2x) Arduino Nano Sense 33 BLE (2x) nRF52840 Dongle (1x) nRF52840 Development Kit  The Software Stack Embedded Software Development:  Segger Embedded Studio nRF5 SDK &amp;amp; nRF5 SDK for Thread and Zigbee nRF Connect+Programmer for flashing code CMSIS Libraries for Arm Cortex M microcontrollers  Utilities and Other tools:  Python + Matplotlib nRF BLE Sniffer nRF 802.</description>
+ (2x) Arduino Nano Sense 33 BLE  Beacon 1 MAC: Central MAC: D4:6B:03:E9:AD:E7   (2x) nRF52840 Dongle  Beacon 2 MAC: Beacon 3 MAC:   (1x) nRF52840 Development Kit  The Software Stack Embedded Software Development:  Segger Embedded Studio nRF5 SDK &amp;amp; nRF5 SDK for Thread and Zigbee nRF Connect+Programmer for flashing code CMSIS Libraries for Arm Cortex M microcontrollers  Utilities and Other tools:  Python + Matplotlib nRF BLE Sniffer nRF 802.</description>
     </item>
     
     <item>
