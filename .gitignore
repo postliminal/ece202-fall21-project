@@ -11,4 +11,6 @@ software/ble_app/ble_app_beacon_dk/Output/Release/Obj/*
 software/ble_app/ble_app_beacon_dk/Output/Debug/Obj/*
 software/ble_app/ble_app_central_attempt2_dk/Output/Release/Obj/*
 software/ble_app/ble_app_central_attempt2_dk/Output/Debug/Obj/*
+software/ble_app/ble_app_central_dk_wlocation/Output/Debug/Obj/*
+software/ble_app/ble_app_central_dk_wlocation/Output/Release/Obj/*
 software/python/py_ble/.ipynb_checkpoints
