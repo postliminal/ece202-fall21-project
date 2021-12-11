@@ -3,6 +3,11 @@ software/openthread_app/openthread_cli_arduino/_build/nrf52840_xxaa/*
 software/openthread_app/openthread_cli_arduino/.vscode
 software/openthread_app/openthread_ncp_dongle/Output/Debug/Obj/*
 software/openthread_app/openthread_ncp_dongle/Output/Release/Obj/*
+software/openthread_app/openthread_cli_dk/Output/Debug/Obj/*
+software/openthread_app/openthread_cli_dk/Output/Release/Obj/*
+software/openthread_app/openthread_cli_ftd_arduino/Output/Debug/Obj/*
+software/openthread_app/openthread_cli_ftd_arduino/Output/Release/Obj/*
+
 software/ble_app/ble_app_beacon_dongle/Output/Release/Obj/*
 software/ble_app/ble_app_beacon_dongle/Output/Debug/Obj/*
 software/ble_app/ble_app_beacon_arduino/Output/Release/Obj/*

@@ -6,7 +6,7 @@
  * folder.
  */
 #include <math.h>
-#include <stdio.h>
+// #include <stdio.h>
 #include "arm_math.h"
 
 
@@ -46,11 +46,14 @@
 #define LEDBUTTON_BUTTON          BSP_BUTTON_0                          /**< Button that writes to the LED characteristic of the peer. */
 #define BUTTON_DETECTION_DELAY    APP_TIMER_TICKS(50)                   /**< Delay from a GPIOTE event until a button is reported as pushed (in number of timer ticks). */
 
+// ---------------- ADDED BY EDWIN
+
 arm_gaussian_naive_bayes_instance_f32 S;
 
 #define NB_OF_CLASSES 3
 #define VECTOR_DIMENSION 6
 
+// -----------------
 
 NRF_BLE_GATT_DEF(m_gatt);                                               /**< GATT module instance. */
 BLE_LBS_C_ARRAY_DEF(m_lbs_c, NRF_SDH_BLE_CENTRAL_LINK_COUNT);           /**< LED button client instances. */
@@ -93,9 +96,9 @@ static ble_gap_scan_params_t const m_scan_param =
     .scan_phys     = BLE_GAP_PHY_1MBPS,
 };
 
-NRF_RINGBUF_DEF(m_ringbuf_beacon1, 64);
-NRF_RINGBUF_DEF(m_ringbuf_beacon2, 64);
-NRF_RINGBUF_DEF(m_ringbuf_beacon3, 64);
+// NRF_RINGBUF_DEF(m_ringbuf_beacon1, 64);
+// NRF_RINGBUF_DEF(m_ringbuf_beacon2, 64);
+// NRF_RINGBUF_DEF(m_ringbuf_beacon3, 64);
 
 int8_t beacon_buf1[4] = {0};
 int8_t beacon_buf2[4] = {0};
@@ -619,7 +622,7 @@ static void gatt_init(void)
 
 /**@brief Function for predicting location.
  */
-static void get_location()
+static void get_location() // TODO: add input params : x,y,z coordinate in float
 {
   float32_t in[3];
   const float32_t theta[NB_OF_CLASSES*VECTOR_DIMENSION] = {
@@ -641,13 +644,11 @@ static void get_location()
   }; /**< Class prior probabilities */
 
 
-
-    for(int i=0;i<4;i++){
-      NRF_LOG_INFO("%d, %d, %d", beacon_buf1[i], beacon_buf2[i], beacon_buf3[i]);
-    }
+    // for(int i=0;i<4;i++){
+    //   NRF_LOG_INFO("%d, %d, %d", beacon_buf1[i], beacon_buf2[i], beacon_buf3[i]);
+    // }
 
     float32_t result[NB_OF_CLASSES];
-    float32_t temp[NB_OF_CLASSES];
     float32_t maxProba;
     uint32_t index;
   
@@ -666,9 +667,7 @@ static void get_location()
 
     maxProba = result[index];
 
-  #if defined(SEMIHOSTING)
-    printf("Class = %d\n", index);
-  #endif
+	NRF_LOG_INFO("Class = %d\n", index);
 
     in[0] = -1.5f;
     in[1] = 1.0f;
@@ -678,9 +677,7 @@ static void get_location()
 
     maxProba = result[index];
 
-  #if defined(SEMIHOSTING)
-    printf("Class = %d\n", index);
-  #endif
+	NRF_LOG_INFO("Class = %d\n", index);
 
     in[0] =-0.8f;
     in[1] = -1.0f;
@@ -690,18 +687,8 @@ static void get_location()
 
     maxProba = result[index];
 
-  #if defined(SEMIHOSTING)
-    printf("Class = %d\n", index);
-  #endif
-
-  #if !defined(SEMIHOSTING)
-    while (1); 
-  #endif
+    NRF_LOG_INFO("Class = %d\n", index);
  
-
-
-
-
 
 }
 
@@ -728,13 +715,13 @@ int main(void)
 
     for (;;)
     {
-    for(int i=0;i<20;i++)
-    {
-        idle_state_handle();
-    }
+	    for(int i=0;i<20;i++)
+	    {
+	        idle_state_handle();
+	    }
 
-    // todo - call this via timer/interrupt
-    get_location();
+	    // todo - call this via timer/interrupt
+	    get_location();
 
     }
 }
