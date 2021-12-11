@@ -96,10 +96,6 @@ static ble_gap_scan_params_t const m_scan_param =
     .scan_phys     = BLE_GAP_PHY_1MBPS,
 };
 
-// NRF_RINGBUF_DEF(m_ringbuf_beacon1, 64);
-// NRF_RINGBUF_DEF(m_ringbuf_beacon2, 64);
-// NRF_RINGBUF_DEF(m_ringbuf_beacon3, 64);
-
 const int buffer_size = 4;
 
 int8_t beacon_buf1[4] = {0};

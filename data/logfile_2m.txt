@@ -1,0 +1,2840 @@
+<info> app_timer: RTC: initialized.
+<info> app: Multilink example started.
+<info> app: Start scanning for device w address (uint32_t)m_addr_1.addr).
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] 0.00
+<error> app: in[1] -14.75
+<error> app: in[2] 0.00
+<error> app: Class = -1897.40
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -17.25
+<error> app: in[1] -28.50
+<error> app: in[2] -17.50
+<error> app: Class = -1734.08
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -33.25
+<error> app: in[1] -28.50
+<error> app: in[2] -34.25
+<error> app: Class = -1686.40
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -50.25
+<error> app: in[1] -28.50
+<error> app: in[2] -34.25
+<error> app: Class = -1678.63
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.25
+<error> app: in[1] -28.50
+<error> app: in[2] -51.00
+<error> app: Class = -1661.61
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -65.50
+<error> app: in[1] -45.00
+<error> app: in[2] -51.00
+<error> app: Class = -1583.95
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -65.50
+<error> app: in[1] -45.00
+<error> app: in[2] -66.75
+<error> app: Class = -1550.16
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -65.75
+<error> app: in[1] -60.25
+<error> app: in[2] -65.50
+<error> app: Class = -1533.78
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -65.75
+<error> app: in[1] -60.25
+<error> app: in[2] -64.50
+<error> app: Class = -1534.28
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -65.75
+<error> app: in[1] -61.00
+<error> app: in[2] -64.50
+<error> app: Class = -1533.11
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -65.75
+<error> app: in[1] -61.00
+<error> app: in[2] -65.25
+<error> app: Class = -1532.73
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -65.75
+<error> app: in[1] -61.00
+<error> app: in[2] -65.25
+<error> app: Class = -1532.73
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.25
+<error> app: in[1] -60.75
+<error> app: in[2] -65.25
+<error> app: Class = -1533.38
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.25
+<error> app: in[1] -60.75
+<error> app: in[2] -66.25
+<error> app: Class = -1532.90
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.25
+<error> app: in[1] -60.75
+<error> app: in[2] -67.25
+<error> app: Class = -1526.77
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.25
+<error> app: in[1] -60.75
+<error> app: in[2] -67.25
+<error> app: Class = -1532.55
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -60.75
+<error> app: in[2] -68.50
+<error> app: Class = -1499.05
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -61.75
+<error> app: in[2] -68.50
+<error> app: Class = -1498.55
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -61.75
+<error> app: in[2] -68.50
+<error> app: Class = -1498.55
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -61.50
+<error> app: in[2] -68.50
+<error> app: Class = -1498.67
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -61.50
+<error> app: in[2] -67.50
+<error> app: Class = -1521.45
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -61.50
+<error> app: in[2] -68.00
+<error> app: Class = -1509.11
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -65.50
+<error> app: in[1] -59.00
+<error> app: in[2] -68.00
+<error> app: Class = -1505.05
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.00
+<error> app: in[1] -59.25
+<error> app: in[2] -68.00
+<error> app: Class = -1507.56
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.00
+<error> app: in[1] -57.75
+<error> app: in[2] -67.75
+<error> app: Class = -1514.63
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.00
+<error> app: in[1] -57.75
+<error> app: in[2] -67.25
+<error> app: Class = -1527.20
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -60.50
+<error> app: in[2] -67.00
+<error> app: Class = -1533.09
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -60.50
+<error> app: in[2] -67.00
+<error> app: Class = -1533.09
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -60.50
+<error> app: in[2] -66.50
+<error> app: Class = -1533.31
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -63.00
+<error> app: in[2] -65.00
+<error> app: Class = -1530.48
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -62.00
+<error> app: in[2] -65.00
+<error> app: Class = -1531.80
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.25
+<error> app: in[1] -62.00
+<error> app: in[2] -65.00
+<error> app: Class = -1531.67
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.25
+<error> app: in[1] -63.75
+<error> app: in[2] -65.00
+<error> app: Class = -1529.44
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -61.00
+<error> app: in[2] -65.75
+<error> app: Class = -1533.03
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.00
+<error> app: in[1] -61.25
+<error> app: in[2] -66.50
+<error> app: Class = -1531.89
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.00
+<error> app: in[1] -61.25
+<error> app: in[2] -67.00
+<error> app: Class = -1532.22
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.50
+<error> app: in[1] -59.50
+<error> app: in[2] -68.00
+<error> app: Class = -1516.08
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.50
+<error> app: in[1] -59.50
+<error> app: in[2] -66.50
+<error> app: Class = -1535.54
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.50
+<error> app: in[1] -59.50
+<error> app: in[2] -66.50
+<error> app: Class = -1535.54
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -59.75
+<error> app: in[2] -66.50
+<error> app: Class = -1534.68
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.25
+<error> app: in[1] -59.75
+<error> app: in[2] -66.50
+<error> app: Class = -1534.96
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.25
+<error> app: in[1] -59.75
+<error> app: in[2] -66.50
+<error> app: Class = -1534.96
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -57.00
+<error> app: in[2] -67.00
+<error> app: Class = -1538.38
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -57.00
+<error> app: in[2] -67.00
+<error> app: Class = -1538.38
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.25
+<error> app: in[1] -57.00
+<error> app: in[2] -67.00
+<error> app: Class = -1539.86
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.25
+<error> app: in[1] -57.00
+<error> app: in[2] -67.00
+<error> app: Class = -1539.86
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.25
+<error> app: in[1] -57.50
+<error> app: in[2] -67.00
+<error> app: Class = -1538.85
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.50
+<error> app: in[1] -57.50
+<error> app: in[2] -68.50
+<error> app: Class = -1505.49
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.25
+<error> app: in[1] -57.50
+<error> app: in[2] -68.00
+<error> app: Class = -1515.84
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -60.00
+<error> app: in[2] -66.75
+<error> app: Class = -1534.15
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -62.00
+<error> app: in[2] -66.75
+<error> app: Class = -1531.11
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -65.75
+<error> app: in[1] -62.00
+<error> app: in[2] -66.75
+<error> app: Class = -1530.56
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -65.50
+<error> app: in[1] -62.00
+<error> app: in[2] -67.25
+<error> app: Class = -1522.12
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -65.75
+<error> app: in[1] -62.00
+<error> app: in[2] -65.50
+<error> app: Class = -1531.15
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -65.75
+<error> app: in[1] -62.25
+<error> app: in[2] -65.50
+<error> app: Class = -1530.81
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -62.25
+<error> app: in[2] -66.00
+<error> app: Class = -1530.97
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -62.25
+<error> app: in[2] -66.00
+<error> app: Class = -1530.97
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.75
+<error> app: in[1] -62.25
+<error> app: in[2] -66.00
+<error> app: Class = -1531.70
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -68.00
+<error> app: in[1] -62.25
+<error> app: in[2] -66.75
+<error> app: Class = -1531.51
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -68.00
+<error> app: in[1] -62.25
+<error> app: in[2] -65.00
+<error> app: Class = -1532.34
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -68.00
+<error> app: in[1] -64.00
+<error> app: in[2] -65.00
+<error> app: Class = -1530.17
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.50
+<error> app: in[1] -61.25
+<error> app: in[2] -65.25
+<error> app: Class = -1533.33
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.50
+<error> app: in[1] -61.25
+<error> app: in[2] -65.25
+<error> app: Class = -1533.33
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -68.00
+<error> app: in[1] -60.25
+<error> app: in[2] -65.25
+<error> app: Class = -1535.19
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -68.00
+<error> app: in[1] -58.50
+<error> app: in[2] -65.25
+<error> app: Class = -1538.22
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -68.00
+<error> app: in[1] -59.75
+<error> app: in[2] -65.25
+<error> app: Class = -1536.01
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -68.00
+<error> app: in[1] -59.75
+<error> app: in[2] -65.25
+<error> app: Class = -1536.01
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.50
+<error> app: in[1] -59.75
+<error> app: in[2] -65.25
+<error> app: Class = -1535.71
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.50
+<error> app: in[1] -62.75
+<error> app: in[2] -65.25
+<error> app: Class = -1531.25
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.75
+<error> app: in[1] -62.75
+<error> app: in[2] -65.25
+<error> app: Class = -1531.40
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.75
+<error> app: in[1] -62.75
+<error> app: in[2] -65.25
+<error> app: Class = -1531.40
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.25
+<error> app: in[1] -62.75
+<error> app: in[2] -65.25
+<error> app: Class = -1530.54
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.25
+<error> app: in[1] -64.00
+<error> app: in[2] -65.25
+<error> app: Class = -1529.02
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.25
+<error> app: in[1] -64.00
+<error> app: in[2] -65.25
+<error> app: Class = -1529.02
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -65.25
+<error> app: in[1] -61.00
+<error> app: in[2] -64.25
+<error> app: Class = -1532.98
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.25
+<error> app: in[1] -61.00
+<error> app: in[2] -64.25
+<error> app: Class = -1533.51
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.25
+<error> app: in[1] -61.00
+<error> app: in[2] -66.25
+<error> app: Class = -1532.51
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -60.00
+<error> app: in[2] -67.00
+<error> app: Class = -1533.89
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.75
+<error> app: in[1] -60.00
+<error> app: in[2] -67.25
+<error> app: Class = -1534.51
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.75
+<error> app: in[1] -60.00
+<error> app: in[2] -67.50
+<error> app: Class = -1529.68
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -68.50
+<error> app: in[1] -60.75
+<error> app: in[2] -65.50
+<error> app: Class = -1534.59
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.75
+<error> app: in[1] -62.50
+<error> app: in[2] -65.50
+<error> app: Class = -1531.61
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.75
+<error> app: in[1] -62.50
+<error> app: in[2] -65.50
+<error> app: Class = -1531.61
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.75
+<error> app: in[1] -62.50
+<error> app: in[2] -65.00
+<error> app: Class = -1531.85
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.75
+<error> app: in[1] -64.75
+<error> app: in[2] -65.00
+<error> app: Class = -1529.21
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -61.75
+<error> app: in[2] -65.00
+<error> app: Class = -1532.30
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -61.75
+<error> app: in[2] -65.00
+<error> app: Class = -1532.30
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -61.75
+<error> app: in[2] -67.25
+<error> app: Class = -1527.67
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -59.75
+<error> app: in[2] -67.25
+<error> app: Class = -1528.72
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.25
+<error> app: in[1] -59.75
+<error> app: in[2] -67.75
+<error> app: Class = -1514.75
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.25
+<error> app: in[1] -60.25
+<error> app: in[2] -68.00
+<error> app: Class = -1508.36
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.25
+<error> app: in[1] -60.25
+<error> app: in[2] -68.00
+<error> app: Class = -1508.36
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.25
+<error> app: in[1] -60.50
+<error> app: in[2] -68.75
+<error> app: Class = -1490.59
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.25
+<error> app: in[1] -60.50
+<error> app: in[2] -68.75
+<error> app: Class = -1490.59
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.25
+<error> app: in[1] -61.75
+<error> app: in[2] -68.75
+<error> app: Class = -1489.96
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.25
+<error> app: in[1] -61.75
+<error> app: in[2] -68.75
+<error> app: Class = -1489.96
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.00
+<error> app: in[1] -63.25
+<error> app: in[2] -67.00
+<error> app: Class = -1528.95
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.00
+<error> app: in[1] -63.25
+<error> app: in[2] -68.00
+<error> app: Class = -1505.55
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -65.25
+<error> app: in[1] -60.75
+<error> app: in[2] -68.00
+<error> app: Class = -1502.77
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.00
+<error> app: in[1] -60.75
+<error> app: in[2] -67.50
+<error> app: Class = -1519.05
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -65.00
+<error> app: in[1] -59.00
+<error> app: in[2] -67.00
+<error> app: Class = -1527.65
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -65.75
+<error> app: in[1] -59.75
+<error> app: in[2] -67.00
+<error> app: Class = -1531.07
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -59.75
+<error> app: in[2] -67.00
+<error> app: Class = -1534.31
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.25
+<error> app: in[1] -62.25
+<error> app: in[2] -67.50
+<error> app: Class = -1519.69
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.25
+<error> app: in[1] -62.25
+<error> app: in[2] -65.75
+<error> app: Class = -1530.95
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.25
+<error> app: in[1] -61.50
+<error> app: in[2] -65.75
+<error> app: Class = -1532.57
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.25
+<error> app: in[1] -61.50
+<error> app: in[2] -65.75
+<error> app: Class = -1532.57
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.25
+<error> app: in[1] -61.50
+<error> app: in[2] -65.75
+<error> app: Class = -1532.57
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -61.50
+<error> app: in[2] -65.75
+<error> app: Class = -1532.14
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -64.00
+<error> app: in[2] -66.75
+<error> app: Class = -1528.45
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.00
+<error> app: in[1] -61.50
+<error> app: in[2] -66.75
+<error> app: Class = -1531.40
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -61.50
+<error> app: in[2] -67.25
+<error> app: Class = -1527.79
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -61.50
+<error> app: in[2] -67.25
+<error> app: Class = -1527.79
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.00
+<error> app: in[1] -61.75
+<error> app: in[2] -67.25
+<error> app: Class = -1524.90
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.00
+<error> app: in[1] -61.75
+<error> app: in[2] -68.25
+<error> app: Class = -1505.89
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.00
+<error> app: in[1] -61.75
+<error> app: in[2] -67.00
+<error> app: Class = -1531.49
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.00
+<error> app: in[1] -61.75
+<error> app: in[2] -66.50
+<error> app: Class = -1531.72
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -61.75
+<error> app: in[2] -66.50
+<error> app: Class = -1531.57
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -61.75
+<error> app: in[2] -65.25
+<error> app: Class = -1532.17
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -61.75
+<error> app: in[2] -65.25
+<error> app: Class = -1532.17
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -59.25
+<error> app: in[2] -65.25
+<error> app: Class = -1536.13
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -59.25
+<error> app: in[2] -64.25
+<error> app: Class = -1536.64
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -60.50
+<error> app: in[2] -64.25
+<error> app: Class = -1534.56
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -65.50
+<error> app: in[1] -60.50
+<error> app: in[2] -64.25
+<error> app: Class = -1533.88
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -65.50
+<error> app: in[1] -60.75
+<error> app: in[2] -64.25
+<error> app: Class = -1533.49
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -65.25
+<error> app: in[1] -62.75
+<error> app: in[2] -65.50
+<error> app: Class = -1529.89
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -65.25
+<error> app: in[1] -62.75
+<error> app: in[2] -65.50
+<error> app: Class = -1529.89
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -65.25
+<error> app: in[1] -62.75
+<error> app: in[2] -65.50
+<error> app: Class = -1529.89
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -65.50
+<error> app: in[1] -64.75
+<error> app: in[2] -66.25
+<error> app: Class = -1527.33
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -65.50
+<error> app: in[1] -61.75
+<error> app: in[2] -66.25
+<error> app: Class = -1531.01
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.25
+<error> app: in[1] -61.75
+<error> app: in[2] -66.25
+<error> app: Class = -1531.41
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.25
+<error> app: in[1] -61.00
+<error> app: in[2] -66.25
+<error> app: Class = -1532.51
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.00
+<error> app: in[1] -59.00
+<error> app: in[2] -64.75
+<error> app: Class = -1536.97
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.00
+<error> app: in[1] -59.00
+<error> app: in[2] -64.75
+<error> app: Class = -1536.97
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.00
+<error> app: in[1] -59.00
+<error> app: in[2] -64.75
+<error> app: Class = -1536.97
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.00
+<error> app: in[1] -59.00
+<error> app: in[2] -64.75
+<error> app: Class = -1536.97
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.00
+<error> app: in[1] -59.25
+<error> app: in[2] -65.25
+<error> app: Class = -1536.27
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -59.25
+<error> app: in[2] -65.25
+<error> app: Class = -1535.99
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.25
+<error> app: in[1] -59.25
+<error> app: in[2] -65.25
+<error> app: Class = -1536.42
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.25
+<error> app: in[1] -59.25
+<error> app: in[2] -65.25
+<error> app: Class = -1536.42
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -59.25
+<error> app: in[2] -65.25
+<error> app: Class = -1536.13
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -59.25
+<error> app: in[2] -65.25
+<error> app: Class = -1536.13
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.25
+<error> app: in[1] -59.25
+<error> app: in[2] -65.25
+<error> app: Class = -1535.85
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.00
+<error> app: in[1] -59.25
+<error> app: in[2] -65.75
+<error> app: Class = -1535.47
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.00
+<error> app: in[1] -59.75
+<error> app: in[2] -65.75
+<error> app: Class = -1534.61
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -64.50
+<error> app: in[1] -59.75
+<error> app: in[2] -65.25
+<error> app: Class = -1534.10
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -65.25
+<error> app: in[1] -62.25
+<error> app: in[2] -65.25
+<error> app: Class = -1530.67
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -65.50
+<error> app: in[1] -62.00
+<error> app: in[2] -65.75
+<error> app: Class = -1530.90
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -62.00
+<error> app: in[2] -66.00
+<error> app: Class = -1531.31
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.50
+<error> app: in[1] -62.00
+<error> app: in[2] -66.00
+<error> app: Class = -1531.89
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.50
+<error> app: in[1] -61.75
+<error> app: in[2] -66.00
+<error> app: Class = -1532.24
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.50
+<error> app: in[1] -59.50
+<error> app: in[2] -66.00
+<error> app: Class = -1535.77
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.50
+<error> app: in[1] -60.25
+<error> app: in[2] -66.00
+<error> app: Class = -1534.52
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -60.25
+<error> app: in[2] -66.00
+<error> app: Class = -1534.08
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -62.50
+<error> app: in[2] -66.75
+<error> app: Class = -1530.43
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -62.25
+<error> app: in[2] -66.75
+<error> app: Class = -1530.62
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -62.25
+<error> app: in[2] -66.75
+<error> app: Class = -1530.62
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.25
+<error> app: in[1] -62.25
+<error> app: in[2] -67.00
+<error> app: Class = -1530.37
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.25
+<error> app: in[1] -60.75
+<error> app: in[2] -67.00
+<error> app: Class = -1533.12
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.25
+<error> app: in[1] -60.75
+<error> app: in[2] -67.00
+<error> app: Class = -1533.12
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.25
+<error> app: in[1] -60.75
+<error> app: in[2] -67.00
+<error> app: Class = -1533.12
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.25
+<error> app: in[1] -58.50
+<error> app: in[2] -65.75
+<error> app: Class = -1537.52
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.25
+<error> app: in[1] -59.00
+<error> app: in[2] -65.75
+<error> app: Class = -1536.61
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.25
+<error> app: in[1] -59.00
+<error> app: in[2] -65.75
+<error> app: Class = -1536.61
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.25
+<error> app: in[1] -59.00
+<error> app: in[2] -66.00
+<error> app: Class = -1536.50
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.25
+<error> app: in[1] -60.75
+<error> app: in[2] -66.00
+<error> app: Class = -1533.58
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.50
+<error> app: in[1] -60.75
+<error> app: in[2] -66.25
+<error> app: Class = -1533.61
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.50
+<error> app: in[1] -62.75
+<error> app: in[2] -66.25
+<error> app: Class = -1530.77
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.50
+<error> app: in[1] -62.75
+<error> app: in[2] -66.75
+<error> app: Class = -1530.54
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.50
+<error> app: in[1] -62.75
+<error> app: in[2] -66.75
+<error> app: Class = -1530.54
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -62.75
+<error> app: in[2] -66.50
+<error> app: Class = -1530.08
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -60.50
+<error> app: in[2] -66.50
+<error> app: Class = -1533.31
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -60.50
+<error> app: in[2] -66.00
+<error> app: Class = -1533.54
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -60.50
+<error> app: in[2] -66.75
+<error> app: Class = -1533.20
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.25
+<error> app: in[1] -60.50
+<error> app: in[2] -66.75
+<error> app: Class = -1533.63
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.25
+<error> app: in[1] -62.00
+<error> app: in[2] -66.75
+<error> app: Class = -1531.40
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.25
+<error> app: in[1] -63.50
+<error> app: in[2] -67.50
+<error> app: Class = -1519.16
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.25
+<error> app: in[1] -63.50
+<error> app: in[2] -67.50
+<error> app: Class = -1524.94
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.25
+<error> app: in[1] -63.50
+<error> app: in[2] -66.00
+<error> app: Class = -1529.81
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.25
+<error> app: in[1] -65.25
+<error> app: in[2] -66.50
+<error> app: Class = -1527.69
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.50
+<error> app: in[1] -62.00
+<error> app: in[2] -66.50
+<error> app: Class = -1531.66
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.50
+<error> app: in[1] -61.25
+<error> app: in[2] -66.50
+<error> app: Class = -1532.74
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.75
+<error> app: in[1] -61.25
+<error> app: in[2] -66.50
+<error> app: Class = -1532.89
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.00
+<error> app: in[1] -61.25
+<error> app: in[2] -66.50
+<error> app: Class = -1532.44
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.00
+<error> app: in[1] -62.25
+<error> app: in[2] -67.00
+<error> app: Class = -1530.80
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.00
+<error> app: in[1] -62.25
+<error> app: in[2] -68.00
+<error> app: Class = -1511.65
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.75
+<error> app: in[1] -62.25
+<error> app: in[2] -68.75
+<error> app: Class = -1498.57
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.00
+<error> app: in[1] -62.25
+<error> app: in[2] -68.75
+<error> app: Class = -1494.02
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.00
+<error> app: in[1] -62.00
+<error> app: in[2] -68.75
+<error> app: Class = -1494.13
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.00
+<error> app: in[1] -62.25
+<error> app: in[2] -67.25
+<error> app: Class = -1530.33
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.00
+<error> app: in[1] -62.25
+<error> app: in[2] -67.25
+<error> app: Class = -1530.33
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.00
+<error> app: in[1] -62.25
+<error> app: in[2] -67.25
+<error> app: Class = -1530.33
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.00
+<error> app: in[1] -62.25
+<error> app: in[2] -65.75
+<error> app: Class = -1531.37
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.00
+<error> app: in[1] -62.25
+<error> app: in[2] -66.25
+<error> app: Class = -1531.14
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -62.25
+<error> app: in[2] -66.25
+<error> app: Class = -1530.99
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -61.25
+<error> app: in[2] -66.25
+<error> app: Class = -1532.41
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.25
+<error> app: in[1] -61.25
+<error> app: in[2] -66.00
+<error> app: Class = -1532.82
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.25
+<error> app: in[1] -63.00
+<error> app: in[2] -66.00
+<error> app: Class = -1530.42
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.25
+<error> app: in[1] -64.50
+<error> app: in[2] -66.50
+<error> app: Class = -1528.45
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.00
+<error> app: in[1] -61.75
+<error> app: in[2] -66.50
+<error> app: Class = -1531.72
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.00
+<error> app: in[1] -61.75
+<error> app: in[2] -66.50
+<error> app: Class = -1531.72
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -62.00
+<error> app: in[2] -67.00
+<error> app: Class = -1531.00
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -59.00
+<error> app: in[2] -67.00
+<error> app: Class = -1535.75
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -60.25
+<error> app: in[2] -67.00
+<error> app: Class = -1533.63
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -60.25
+<error> app: in[2] -67.00
+<error> app: Class = -1533.49
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -60.25
+<error> app: in[2] -67.00
+<error> app: Class = -1533.49
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -60.25
+<error> app: in[2] -67.00
+<error> app: Class = -1533.49
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -60.50
+<error> app: in[2] -66.50
+<error> app: Class = -1533.45
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.00
+<error> app: in[1] -60.50
+<error> app: in[2] -66.50
+<error> app: Class = -1533.59
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.00
+<error> app: in[1] -62.50
+<error> app: in[2] -66.50
+<error> app: Class = -1530.69
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.00
+<error> app: in[1] -61.25
+<error> app: in[2] -66.50
+<error> app: Class = -1532.44
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.00
+<error> app: in[1] -61.25
+<error> app: in[2] -66.00
+<error> app: Class = -1532.68
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -60.25
+<error> app: in[2] -66.00
+<error> app: Class = -1534.08
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -61.25
+<error> app: in[2] -67.00
+<error> app: Class = -1531.93
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.00
+<error> app: in[1] -61.25
+<error> app: in[2] -67.00
+<error> app: Class = -1531.60
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -61.25
+<error> app: in[2] -67.00
+<error> app: Class = -1531.93
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -62.50
+<error> app: in[2] -66.75
+<error> app: Class = -1530.29
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.00
+<error> app: in[1] -64.50
+<error> app: in[2] -66.75
+<error> app: Class = -1528.19
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.50
+<error> app: in[1] -65.25
+<error> app: in[2] -67.75
+<error> app: Class = -1519.62
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.50
+<error> app: in[1] -65.25
+<error> app: in[2] -66.25
+<error> app: Class = -1527.95
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.50
+<error> app: in[1] -62.00
+<error> app: in[2] -66.25
+<error> app: Class = -1531.77
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -68.00
+<error> app: in[1] -62.00
+<error> app: in[2] -65.00
+<error> app: Class = -1532.69
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -68.00
+<error> app: in[1] -62.00
+<error> app: in[2] -65.50
+<error> app: Class = -1532.44
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.50
+<error> app: in[1] -62.00
+<error> app: in[2] -65.50
+<error> app: Class = -1532.13
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.50
+<error> app: in[1] -62.00
+<error> app: in[2] -65.50
+<error> app: Class = -1532.13
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.50
+<error> app: in[1] -63.25
+<error> app: in[2] -65.50
+<error> app: Class = -1530.50
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -68.00
+<error> app: in[1] -62.25
+<error> app: in[2] -65.50
+<error> app: Class = -1532.09
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -68.25
+<error> app: in[1] -62.00
+<error> app: in[2] -66.25
+<error> app: Class = -1532.23
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -68.25
+<error> app: in[1] -59.00
+<error> app: in[2] -66.25
+<error> app: Class = -1536.99
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -68.75
+<error> app: in[1] -60.50
+<error> app: in[2] -66.25
+<error> app: Class = -1534.78
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -68.75
+<error> app: in[1] -60.50
+<error> app: in[2] -64.75
+<error> app: Class = -1535.52
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -68.75
+<error> app: in[1] -62.00
+<error> app: in[2] -65.25
+<error> app: Class = -1533.04
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -68.00
+<error> app: in[1] -62.00
+<error> app: in[2] -65.25
+<error> app: Class = -1532.56
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -68.25
+<error> app: in[1] -63.50
+<error> app: in[2] -65.25
+<error> app: Class = -1530.78
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -68.25
+<error> app: in[1] -63.50
+<error> app: in[2] -66.75
+<error> app: Class = -1530.07
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -68.50
+<error> app: in[1] -61.75
+<error> app: in[2] -67.75
+<error> app: Class = -1527.35
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -68.50
+<error> app: in[1] -61.75
+<error> app: in[2] -67.75
+<error> app: Class = -1527.35
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -68.75
+<error> app: in[1] -62.00
+<error> app: in[2] -67.75
+<error> app: Class = -1528.90
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -68.75
+<error> app: in[1] -62.00
+<error> app: in[2] -66.25
+<error> app: Class = -1532.55
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -68.50
+<error> app: in[1] -64.00
+<error> app: in[2] -67.00
+<error> app: Class = -1529.54
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -68.00
+<error> app: in[1] -64.25
+<error> app: in[2] -67.00
+<error> app: Class = -1528.94
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -68.50
+<error> app: in[1] -64.25
+<error> app: in[2] -67.00
+<error> app: Class = -1529.26
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -68.50
+<error> app: in[1] -64.25
+<error> app: in[2] -67.00
+<error> app: Class = -1529.26
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -68.50
+<error> app: in[1] -65.75
+<error> app: in[2] -66.75
+<error> app: Class = -1527.87
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -68.00
+<error> app: in[1] -62.50
+<error> app: in[2] -66.75
+<error> app: Class = -1531.17
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -68.00
+<error> app: in[1] -60.75
+<error> app: in[2] -67.50
+<error> app: Class = -1530.85
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -68.00
+<error> app: in[1] -59.00
+<error> app: in[2] -66.50
+<error> app: Class = -1536.72
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.50
+<error> app: in[1] -60.25
+<error> app: in[2] -66.50
+<error> app: Class = -1534.29
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -60.25
+<error> app: in[2] -65.00
+<error> app: Class = -1534.43
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.00
+<error> app: in[1] -62.75
+<error> app: in[2] -65.75
+<error> app: Class = -1530.15
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.00
+<error> app: in[1] -62.50
+<error> app: in[2] -65.75
+<error> app: Class = -1530.48
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -65.75
+<error> app: in[1] -62.50
+<error> app: in[2] -66.50
+<error> app: Class = -1530.00
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -64.25
+<error> app: in[2] -67.00
+<error> app: Class = -1528.20
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -61.25
+<error> app: in[2] -68.50
+<error> app: Class = -1498.80
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.00
+<error> app: in[1] -61.25
+<error> app: in[2] -66.50
+<error> app: Class = -1532.44
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.00
+<error> app: in[1] -58.50
+<error> app: in[2] -66.50
+<error> app: Class = -1537.02
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -59.50
+<error> app: in[2] -66.50
+<error> app: Class = -1534.96
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.25
+<error> app: in[1] -59.50
+<error> app: in[2] -65.50
+<error> app: Class = -1535.30
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -65.75
+<error> app: in[1] -60.50
+<error> app: in[2] -65.50
+<error> app: Class = -1533.38
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.00
+<error> app: in[1] -60.50
+<error> app: in[2] -66.00
+<error> app: Class = -1533.27
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -60.50
+<error> app: in[2] -67.00
+<error> app: Class = -1533.09
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -62.50
+<error> app: in[2] -67.00
+<error> app: Class = -1530.32
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.25
+<error> app: in[1] -62.75
+<error> app: in[2] -68.00
+<error> app: Class = -1512.91
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.25
+<error> app: in[1] -60.00
+<error> app: in[2] -66.75
+<error> app: Class = -1534.43
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.50
+<error> app: in[1] -63.00
+<error> app: in[2] -66.75
+<error> app: Class = -1530.22
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.50
+<error> app: in[1] -63.00
+<error> app: in[2] -65.75
+<error> app: Class = -1530.69
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.50
+<error> app: in[1] -63.00
+<error> app: in[2] -65.75
+<error> app: Class = -1530.69
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.50
+<error> app: in[1] -63.00
+<error> app: in[2] -66.25
+<error> app: Class = -1530.45
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -65.00
+<error> app: in[2] -66.25
+<error> app: Class = -1527.76
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -62.00
+<error> app: in[2] -67.50
+<error> app: Class = -1522.64
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -62.00
+<error> app: in[2] -67.00
+<error> app: Class = -1531.00
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -59.25
+<error> app: in[2] -67.00
+<error> app: Class = -1535.31
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -59.25
+<error> app: in[2] -67.00
+<error> app: Class = -1535.17
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -59.75
+<error> app: in[2] -67.25
+<error> app: Class = -1528.72
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -60.00
+<error> app: in[2] -67.25
+<error> app: Class = -1528.58
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.00
+<error> app: in[1] -60.75
+<error> app: in[2] -67.25
+<error> app: Class = -1525.40
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.00
+<error> app: in[1] -60.75
+<error> app: in[2] -65.75
+<error> app: Class = -1533.00
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.00
+<error> app: in[1] -63.00
+<error> app: in[2] -65.75
+<error> app: Class = -1529.84
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.00
+<error> app: in[1] -62.25
+<error> app: in[2] -65.75
+<error> app: Class = -1530.82
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.25
+<error> app: in[1] -62.00
+<error> app: in[2] -66.25
+<error> app: Class = -1531.06
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.25
+<error> app: in[1] -62.00
+<error> app: in[2] -67.00
+<error> app: Class = -1530.72
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -61.00
+<error> app: in[2] -67.00
+<error> app: Class = -1532.45
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -58.50
+<error> app: in[2] -67.00
+<error> app: Class = -1536.66
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -58.50
+<error> app: in[2] -66.50
+<error> app: Class = -1536.74
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -58.50
+<error> app: in[2] -65.00
+<error> app: Class = -1537.60
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -59.50
+<error> app: in[2] -65.50
+<error> app: Class = -1535.57
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -59.50
+<error> app: in[2] -66.25
+<error> app: Class = -1535.22
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -61.25
+<error> app: in[2] -66.25
+<error> app: Class = -1532.41
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.25
+<error> app: in[1] -61.25
+<error> app: in[2] -66.75
+<error> app: Class = -1531.91
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -61.25
+<error> app: in[2] -67.75
+<error> app: Class = -1515.34
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -61.25
+<error> app: in[2] -67.75
+<error> app: Class = -1515.34
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -61.25
+<error> app: in[2] -66.75
+<error> app: Class = -1532.05
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -61.25
+<error> app: in[2] -66.25
+<error> app: Class = -1532.27
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -58.50
+<error> app: in[2] -65.75
+<error> app: Class = -1537.09
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -59.50
+<error> app: in[2] -65.00
+<error> app: Class = -1535.82
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -59.50
+<error> app: in[2] -65.00
+<error> app: Class = -1535.82
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -59.50
+<error> app: in[2] -66.00
+<error> app: Class = -1535.33
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -61.25
+<error> app: in[2] -65.75
+<error> app: Class = -1532.65
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -61.25
+<error> app: in[2] -66.25
+<error> app: Class = -1532.41
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -61.25
+<error> app: in[2] -67.00
+<error> app: Class = -1532.07
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -61.25
+<error> app: in[2] -67.00
+<error> app: Class = -1532.07
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -61.25
+<error> app: in[2] -68.00
+<error> app: Class = -1510.66
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -61.25
+<error> app: in[2] -66.50
+<error> app: Class = -1532.30
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -59.50
+<error> app: in[2] -66.50
+<error> app: Class = -1535.10
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -60.50
+<error> app: in[2] -66.50
+<error> app: Class = -1533.45
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.25
+<error> app: in[1] -60.50
+<error> app: in[2] -65.00
+<error> app: Class = -1533.90
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.25
+<error> app: in[1] -63.25
+<error> app: in[2] -65.00
+<error> app: Class = -1530.03
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -65.75
+<error> app: in[1] -62.25
+<error> app: in[2] -64.50
+<error> app: Class = -1531.31
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -65.75
+<error> app: in[1] -62.25
+<error> app: in[2] -66.00
+<error> app: Class = -1530.56
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -65.75
+<error> app: in[1] -62.25
+<error> app: in[2] -66.00
+<error> app: Class = -1530.56
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -65.75
+<error> app: in[1] -59.50
+<error> app: in[2] -66.00
+<error> app: Class = -1534.79
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -65.75
+<error> app: in[1] -59.50
+<error> app: in[2] -67.00
+<error> app: Class = -1531.21
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -65.75
+<error> app: in[1] -59.50
+<error> app: in[2] -67.00
+<error> app: Class = -1531.21
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -65.75
+<error> app: in[1] -60.50
+<error> app: in[2] -67.00
+<error> app: Class = -1530.65
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -65.75
+<error> app: in[1] -62.25
+<error> app: in[2] -67.50
+<error> app: Class = -1516.97
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -65.75
+<error> app: in[1] -62.25
+<error> app: in[2] -67.50
+<error> app: Class = -1516.97
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.25
+<error> app: in[1] -64.00
+<error> app: in[2] -67.50
+<error> app: Class = -1518.97
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.25
+<error> app: in[1] -61.25
+<error> app: in[2] -68.00
+<error> app: Class = -1507.83
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.25
+<error> app: in[1] -61.25
+<error> app: in[2] -68.00
+<error> app: Class = -1507.83
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.25
+<error> app: in[1] -59.50
+<error> app: in[2] -68.50
+<error> app: Class = -1496.92
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.25
+<error> app: in[1] -60.50
+<error> app: in[2] -67.50
+<error> app: Class = -1520.56
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.25
+<error> app: in[1] -63.25
+<error> app: in[2] -67.00
+<error> app: Class = -1529.08
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -65.75
+<error> app: in[1] -62.00
+<error> app: in[2] -66.00
+<error> app: Class = -1530.91
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -65.75
+<error> app: in[1] -62.00
+<error> app: in[2] -66.25
+<error> app: Class = -1530.79
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.25
+<error> app: in[1] -61.00
+<error> app: in[2] -66.75
+<error> app: Class = -1532.28
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.25
+<error> app: in[1] -61.00
+<error> app: in[2] -66.75
+<error> app: Class = -1532.28
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.25
+<error> app: in[1] -61.00
+<error> app: in[2] -67.25
+<error> app: Class = -1526.64
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.25
+<error> app: in[1] -59.75
+<error> app: in[2] -67.25
+<error> app: Class = -1527.32
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -62.25
+<error> app: in[2] -68.25
+<error> app: Class = -1504.19
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.00
+<error> app: in[1] -62.00
+<error> app: in[2] -66.75
+<error> app: Class = -1530.69
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.00
+<error> app: in[1] -62.25
+<error> app: in[2] -65.75
+<error> app: Class = -1530.82
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -63.50
+<error> app: in[2] -65.75
+<error> app: Class = -1529.50
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -61.00
+<error> app: in[2] -65.75
+<error> app: Class = -1532.89
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -59.50
+<error> app: in[2] -66.25
+<error> app: Class = -1535.08
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -59.50
+<error> app: in[2] -67.25
+<error> app: Class = -1530.30
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -59.50
+<error> app: in[2] -67.25
+<error> app: Class = -1530.30
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -59.50
+<error> app: in[2] -68.25
+<error> app: Class = -1505.62
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -59.50
+<error> app: in[2] -68.25
+<error> app: Class = -1505.62
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.25
+<error> app: in[1] -59.50
+<error> app: in[2] -68.25
+<error> app: Class = -1508.57
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -60.75
+<error> app: in[2] -67.25
+<error> app: Class = -1529.60
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.50
+<error> app: in[1] -60.75
+<error> app: in[2] -67.00
+<error> app: Class = -1533.27
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.50
+<error> app: in[1] -60.75
+<error> app: in[2] -67.00
+<error> app: Class = -1533.27
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -68.00
+<error> app: in[1] -57.75
+<error> app: in[2] -67.50
+<error> app: Class = -1532.65
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.75
+<error> app: in[1] -59.50
+<error> app: in[2] -67.25
+<error> app: Class = -1535.35
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.50
+<error> app: in[1] -59.50
+<error> app: in[2] -67.25
+<error> app: Class = -1534.77
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -60.75
+<error> app: in[2] -65.75
+<error> app: Class = -1533.41
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -62.50
+<error> app: in[2] -65.75
+<error> app: Class = -1530.90
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -62.50
+<error> app: in[2] -65.75
+<error> app: Class = -1530.90
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -64.00
+<error> app: in[2] -64.25
+<error> app: Class = -1529.82
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -64.00
+<error> app: in[2] -64.25
+<error> app: Class = -1529.82
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -64.00
+<error> app: in[2] -63.50
+<error> app: Class = -1530.22
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -64.00
+<error> app: in[2] -66.00
+<error> app: Class = -1528.94
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.00
+<error> app: in[1] -64.00
+<error> app: in[2] -66.50
+<error> app: Class = -1528.29
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.00
+<error> app: in[1] -63.75
+<error> app: in[2] -66.50
+<error> app: Class = -1528.58
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.25
+<error> app: in[1] -63.00
+<error> app: in[2] -66.00
+<error> app: Class = -1529.85
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -63.75
+<error> app: in[2] -66.00
+<error> app: Class = -1529.22
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -64.25
+<error> app: in[2] -65.75
+<error> app: Class = -1528.78
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -61.25
+<error> app: in[2] -65.75
+<error> app: Class = -1532.65
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.00
+<error> app: in[1] -61.25
+<error> app: in[2] -65.25
+<error> app: Class = -1533.04
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.25
+<error> app: in[1] -61.25
+<error> app: in[2] -65.75
+<error> app: Class = -1532.94
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.25
+<error> app: in[1] -58.75
+<error> app: in[2] -65.75
+<error> app: Class = -1537.06
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.25
+<error> app: in[1] -59.50
+<error> app: in[2] -67.25
+<error> app: Class = -1533.25
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.25
+<error> app: in[1] -59.50
+<error> app: in[2] -67.25
+<error> app: Class = -1533.25
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.25
+<error> app: in[1] -59.50
+<error> app: in[2] -67.25
+<error> app: Class = -1533.25
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.25
+<error> app: in[1] -59.50
+<error> app: in[2] -67.50
+<error> app: Class = -1526.90
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.25
+<error> app: in[1] -59.50
+<error> app: in[2] -68.25
+<error> app: Class = -1508.57
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.25
+<error> app: in[1] -59.50
+<error> app: in[2] -67.25
+<error> app: Class = -1533.25
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.25
+<error> app: in[1] -59.50
+<error> app: in[2] -67.25
+<error> app: Class = -1533.25
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.50
+<error> app: in[1] -61.00
+<error> app: in[2] -66.75
+<error> app: Class = -1533.00
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -58.50
+<error> app: in[2] -66.75
+<error> app: Class = -1536.77
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.00
+<error> app: in[1] -60.25
+<error> app: in[2] -67.00
+<error> app: Class = -1533.77
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.00
+<error> app: in[1] -58.75
+<error> app: in[2] -67.00
+<error> app: Class = -1536.34
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -60.50
+<error> app: in[2] -65.00
+<error> app: Class = -1534.03
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -60.25
+<error> app: in[2] -66.25
+<error> app: Class = -1533.83
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -65.75
+<error> app: in[1] -60.25
+<error> app: in[2] -66.25
+<error> app: Class = -1533.42
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -65.75
+<error> app: in[1] -61.50
+<error> app: in[2] -66.75
+<error> app: Class = -1531.27
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -65.75
+<error> app: in[1] -61.50
+<error> app: in[2] -66.00
+<error> app: Class = -1531.62
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -65.75
+<error> app: in[1] -64.50
+<error> app: in[2] -67.00
+<error> app: Class = -1527.39
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -65.75
+<error> app: in[1] -63.00
+<error> app: in[2] -66.25
+<error> app: Class = -1529.47
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.25
+<error> app: in[1] -63.00
+<error> app: in[2] -66.25
+<error> app: Class = -1530.30
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.25
+<error> app: in[1] -63.00
+<error> app: in[2] -66.25
+<error> app: Class = -1530.30
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.50
+<error> app: in[1] -63.00
+<error> app: in[2] -65.00
+<error> app: Class = -1531.06
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.75
+<error> app: in[1] -63.00
+<error> app: in[2] -65.00
+<error> app: Class = -1531.21
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.50
+<error> app: in[1] -63.00
+<error> app: in[2] -66.75
+<error> app: Class = -1530.22
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.00
+<error> app: in[1] -63.00
+<error> app: in[2] -66.75
+<error> app: Class = -1529.37
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.00
+<error> app: in[1] -63.00
+<error> app: in[2] -66.75
+<error> app: Class = -1529.37
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -64.50
+<error> app: in[1] -61.50
+<error> app: in[2] -66.75
+<error> app: Class = -1530.43
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -64.50
+<error> app: in[1] -61.50
+<error> app: in[2] -66.25
+<error> app: Class = -1530.87
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -64.50
+<error> app: in[1] -61.50
+<error> app: in[2] -67.00
+<error> app: Class = -1523.85
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.00
+<error> app: in[1] -61.50
+<error> app: in[2] -66.50
+<error> app: Class = -1531.52
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.00
+<error> app: in[1] -61.50
+<error> app: in[2] -65.25
+<error> app: Class = -1532.12
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.25
+<error> app: in[1] -61.50
+<error> app: in[2] -65.25
+<error> app: Class = -1532.25
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.25
+<error> app: in[1] -61.50
+<error> app: in[2] -65.75
+<error> app: Class = -1532.01
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.00
+<error> app: in[1] -60.25
+<error> app: in[2] -66.75
+<error> app: Class = -1533.32
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.00
+<error> app: in[1] -60.25
+<error> app: in[2] -66.75
+<error> app: Class = -1533.32
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.00
+<error> app: in[1] -60.75
+<error> app: in[2] -66.75
+<error> app: Class = -1532.53
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -60.75
+<error> app: in[2] -66.75
+<error> app: Class = -1532.95
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.75
+<error> app: in[1] -62.50
+<error> app: in[2] -68.25
+<error> app: Class = -1504.08
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.25
+<error> app: in[1] -62.50
+<error> app: in[2] -67.25
+<error> app: Class = -1525.92
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.25
+<error> app: in[1] -64.25
+<error> app: in[2] -67.25
+<error> app: Class = -1525.23
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.25
+<error> app: in[1] -60.75
+<error> app: in[2] -65.75
+<error> app: Class = -1533.70
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -67.25
+<error> app: in[1] -60.75
+<error> app: in[2] -65.75
+<error> app: Class = -1533.70
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -60.75
+<error> app: in[2] -66.25
+<error> app: Class = -1533.03
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -66.50
+<error> app: in[1] -58.50
+<error> app: in[2] -66.25
+<error> app: Class = -1536.85
+<info> app: b1 = .f
+<info> app: b2 = .f
+<info> app: b3 = .f
+<error> app: in[0] -65.50
+<error> app: in[1] -60.25
+<error> app: in[2] -66.25
+<error> app: Class = -1533.29
+<info> app: b1 = .f
+<info> app: b2 = .f

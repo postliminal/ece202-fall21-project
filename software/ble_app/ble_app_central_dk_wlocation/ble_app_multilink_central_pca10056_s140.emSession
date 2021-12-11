@@ -50,13 +50,7 @@
   <Trace enabled="Yes"/>
  </TraceWindow>
  <Watch1>
-  <Watches active="1" update="Never">
-   <Watchpoint expression="p_scan_ctx" name="p_scan_ctx" radix="-1" linenumber="1122" filename="../../../../../../Desktop/nRF5_SDK_17.1.0_ddde560/components/ble/nrf_ble_scan/nrf_ble_scan.c"/>
-   <Watchpoint expression="err_code" name="err_code" radix="-1" linenumber="1125" filename="../../../../../../Desktop/nRF5_SDK_17.1.0_ddde560/components/ble/nrf_ble_scan/nrf_ble_scan.c"/>
-   <Watchpoint expression="ret" name="ret" radix="-1" linenumber="230" filename="main.c"/>
-   <Watchpoint expression="p_adv" name="p_adv" radix="-1" linenumber="142" filename="main.c"/>
-   <Watchpoint expression="i" name="i" radix="16" linenumber="643" filename="main.c"/>
-  </Watches>
+  <Watches active="1" update="Never"/>
  </Watch1>
  <Watch2>
   <Watches active="0" update="Never"/>
@@ -68,9 +62,11 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="24" y="431" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="main.c" selected="1" top="7" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="13" y="50" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="main.c" selected="0" top="26" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="4" y="120" useTextEdit="1" openedFrom="/Users/royjara/dev/ece202/ece202-fall21-project/software/ble_app/ble_app_central_attempt2_dk/main.c" useBinaryEdit="0" left="0" path="../../../../../../Desktop/nRF5_SDK_17.1.0_ddde560/components/ble/nrf_ble_scan/nrf_ble_scan.h" selected="0" top="101" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="37" y="249" useTextEdit="1" openedFrom="/Users/royjara/dev/ece202/ece202-fall21-project/software/ble_app/ble_app_central_attempt2_dk/main.c" useBinaryEdit="0" left="0" path="sdk_config.h" selected="0" top="240" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="99" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../../../../Desktop/nRF5_SDK_17.1.0_ddde560/components/libraries/util/app_error_weak.c" selected="0" top="83" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="2" y="8087" useTextEdit="1" openedFrom="/Users/royjara/dev/ece202/ece202-fall21-project/software/ble_app/ble_app_central_dk_wlocation/main.c" useBinaryEdit="0" left="0" path="../../../../../../Library/SEGGER/SEGGER Embedded Studio/v3/packages/CMSIS_5/CMSIS/DSP/Include/arm_math.h" selected="1" top="8071" codecName="Default"/>
  </Files>
- <ARMCrossStudioWindow activeProject="ble_app_multilink_central_pca10056_s140" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="" debugSearchPath="" autoConnectCapabilities="3711"/>
+ <ARMCrossStudioWindow activeProject="ble_app_multilink_central_pca10056_s140" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="" debugSearchPath="" autoConnectCapabilities="3199"/>
 </session>
