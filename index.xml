@@ -58,6 +58,19 @@ take photos!!!
     </item>
     
     <item>
+      <title>Future Work</title>
+      <link>//postliminal.github.io/ecem202a_project/posts/5_5futurework/</link>
+      <pubDate>Fri, 10 Dec 2021 03:02:21 -0800</pubDate>
+      
+      <guid>//postliminal.github.io/ecem202a_project/posts/5_5futurework/</guid>
+      <description>Everything that we weren&amp;rsquo;t able to do we can include it here nicely and explain what went wrong   branches we didn&amp;rsquo;t get to combine
+ multitask wakework recog task    any future config changes
+ the sweeps or other sweeps    any processing that could improve results
+  Aspects that were worked on include:
+ Running initial tinyML wake-word models within Segger in an attempt to streamline environment dependencies due to existing environment support/capabilities Deploying developed ML models outside of those supported by the CMSIS DSP toolbox Limitations of hardware space highly impacted the models and condigurations we were able to deploy due to size and storage Overall, whilst the intersections of embedded systems and its capabilities to run Machine Learning models is highly evolving.</description>
+    </item>
+    
+    <item>
       <title>References</title>
       <link>//postliminal.github.io/ecem202a_project/posts/6references/</link>
       <pubDate>Mon, 01 Nov 2021 01:26:43 -0700</pubDate>
@@ -69,19 +82,6 @@ take photos!!!
   https://developer.arm.com/documentation/102052/0000/Train-your-Bayesian-estimator-with-scikit-learn
   https://github.com/nicknameBOB/TF_NCS_dev/blob/master/README.md (Does not appear to work, but cited since the group experimented with this)
   </description>
-    </item>
-    
-    <item>
-      <title>5_5futurework</title>
-      <link>//postliminal.github.io/ecem202a_project/posts/5_5futurework/</link>
-      <pubDate>Fri, 10 Dec 2021 03:02:21 -0800</pubDate>
-      
-      <guid>//postliminal.github.io/ecem202a_project/posts/5_5futurework/</guid>
-      <description>Everything that we weren&amp;rsquo;t able to do we can include it here nicely and explain what went wrong   branches we didn&amp;rsquo;t get to combine
- multitask wakework recog task    any future config changes
- the sweeps or other sweeps    any processing that could improve results
-  Aspects that were worked on include:
- Running initial tinyML wake-word models within Segger in an attempt to streamline environment dependencies due to existing environment support/capabilities Deploying developed ML models outside of those supported by the CMSIS DSP toolbox Limitations of hardware space highly impacted the models and condigurations we were able to deploy due to size and storage Overall, whilst the intersections of embedded systems and its capabilities to run Machine Learning models is highly evolving.</description>
     </item>
     
     <item>
