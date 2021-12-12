@@ -3,12 +3,9 @@
 import numpy as np
 from matplotlib import pyplot as plt
 
-data37 = np.loadtxt('/Users/royjara/Downloads/nrf_sniffer_for_bluetooth_le_4.1.0/rssi_data_ch37.txt',
-                    delimiter=',')  # shape (1000, 2)
-data38 = np.loadtxt('/Users/royjara/Downloads/nrf_sniffer_for_bluetooth_le_4.1.0/rssi_data_ch38.txt',
-                    delimiter=',')  # shape (1000, 2)
-data39 = np.loadtxt('/Users/royjara/Downloads/nrf_sniffer_for_bluetooth_le_4.1.0/rssi_data_ch39.txt',
-                    delimiter=',')  # shape (1000, 2)
+data37 = np.loadtxt('rssi_data_ch37.txt', delimiter=',')  # shape (1000, 2)
+data38 = np.loadtxt('rssi_data_ch38.txt', delimiter=',')  # shape (1000, 2)
+data39 = np.loadtxt('rssi_data_ch39.txt', delimiter=',')  # shape (1000, 2)
 
 x1 = data37[:, 0]
 y1 = data37[:, 1]
