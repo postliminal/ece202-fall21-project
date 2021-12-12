@@ -5,8 +5,7 @@
 <meta name=robots content="index, follow">
 <title>Design | LOCALIZZACIONE</title>
 <meta name=keywords content>
-<meta name=description content="[image 1] - should be showing 3 beacons, a central device, and maybe a PC? Plus X-Y coordinates and roughly spatial distance. DO NOT INCLUDE specific ble or openthread specs/terms/concepts.
-Contents  Hardware Platforms Software Stack BLE Application OpenThread Application Localization Methods using RSSI Experiments  The Hardware Platform The SoC: Nordic nRF52840  (2x) Arduino Nano Sense 33 BLE  Beacon 1 MAC:   (2x) nRF52840 Dongle  Beacon 2 MAC: Beacon 3 MAC:   (1x) nRF52840 Development Kit  Central device (polls beacons)     The Software Stack Embedded Software Development:  Segger Embedded Studio nRF5 SDK & nRF5 SDK for Thread and Zigbee nRF Connect+Programmer for flashing code CMSIS Libraries for Arm Cortex M microcontrollers  Utilities and Other tools:  Python + Matplotlib nRF BLE Sniffer nRF 802.">
+<meta name=description content="Contents  Hardware Platforms Software Stack BLE Application OpenThread Application Localization Methods using RSSI Experiments  The Hardware Platform The SoC: Nordic nRF52840  (2x) Arduino Nano Sense 33 BLE  Beacon 1   (2x) nRF52840 Dongle  Beacon 2 Beacon 3   (1x) nRF52840 Development Kit  Central device (polls beacons)     The Software Stack Embedded Software Development:  Segger Embedded Studio nRF5 SDK & nRF5 SDK for Thread and Zigbee nRF Connect+Programmer for flashing code CMSIS Libraries for Arm Cortex M microcontrollers  Utilities and Other tools:  Python + Matplotlib nRF BLE Sniffer nRF 802.">
 <meta name=author content="Edwin, Roy">
 <link rel=canonical href=//postliminal.github.io/ecem202a_project/posts/4design/>
 <link crossorigin=anonymous href=/ecem202a_project/assets/css/stylesheet.min.5e2b4101351c21e906f398ae96901791830f58d430f96f2659dab7eaef7b3cb7.css integrity="sha256-XitBATUcIekG85iulpAXkYMPWNQw+W8mWdq36u97PLc=" rel="preload stylesheet" as=style>
@@ -23,18 +22,16 @@ Contents  Hardware Platforms Software Stack BLE Application OpenThread Applicati
 <style>#theme-toggle,.top-link{display:none}</style>
 <style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style>
 </noscript><meta property="og:title" content="Design">
-<meta property="og:description" content="[image 1] - should be showing 3 beacons, a central device, and maybe a PC? Plus X-Y coordinates and roughly spatial distance. DO NOT INCLUDE specific ble or openthread specs/terms/concepts.
-Contents  Hardware Platforms Software Stack BLE Application OpenThread Application Localization Methods using RSSI Experiments  The Hardware Platform The SoC: Nordic nRF52840  (2x) Arduino Nano Sense 33 BLE  Beacon 1 MAC:   (2x) nRF52840 Dongle  Beacon 2 MAC: Beacon 3 MAC:   (1x) nRF52840 Development Kit  Central device (polls beacons)     The Software Stack Embedded Software Development:  Segger Embedded Studio nRF5 SDK & nRF5 SDK for Thread and Zigbee nRF Connect+Programmer for flashing code CMSIS Libraries for Arm Cortex M microcontrollers  Utilities and Other tools:  Python + Matplotlib nRF BLE Sniffer nRF 802.">
+<meta property="og:description" content="Contents  Hardware Platforms Software Stack BLE Application OpenThread Application Localization Methods using RSSI Experiments  The Hardware Platform The SoC: Nordic nRF52840  (2x) Arduino Nano Sense 33 BLE  Beacon 1   (2x) nRF52840 Dongle  Beacon 2 Beacon 3   (1x) nRF52840 Development Kit  Central device (polls beacons)     The Software Stack Embedded Software Development:  Segger Embedded Studio nRF5 SDK & nRF5 SDK for Thread and Zigbee nRF Connect+Programmer for flashing code CMSIS Libraries for Arm Cortex M microcontrollers  Utilities and Other tools:  Python + Matplotlib nRF BLE Sniffer nRF 802.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="//postliminal.github.io/ecem202a_project/posts/4design/"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2021-11-01T01:26:43-07:00">
 <meta property="article:modified_time" content="2021-11-01T01:26:43-07:00"><meta property="og:site_name" content="ExampleSite">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="Design">
-<meta name=twitter:description content="[image 1] - should be showing 3 beacons, a central device, and maybe a PC? Plus X-Y coordinates and roughly spatial distance. DO NOT INCLUDE specific ble or openthread specs/terms/concepts.
-Contents  Hardware Platforms Software Stack BLE Application OpenThread Application Localization Methods using RSSI Experiments  The Hardware Platform The SoC: Nordic nRF52840  (2x) Arduino Nano Sense 33 BLE  Beacon 1 MAC:   (2x) nRF52840 Dongle  Beacon 2 MAC: Beacon 3 MAC:   (1x) nRF52840 Development Kit  Central device (polls beacons)     The Software Stack Embedded Software Development:  Segger Embedded Studio nRF5 SDK & nRF5 SDK for Thread and Zigbee nRF Connect+Programmer for flashing code CMSIS Libraries for Arm Cortex M microcontrollers  Utilities and Other tools:  Python + Matplotlib nRF BLE Sniffer nRF 802.">
+<meta name=twitter:description content="Contents  Hardware Platforms Software Stack BLE Application OpenThread Application Localization Methods using RSSI Experiments  The Hardware Platform The SoC: Nordic nRF52840  (2x) Arduino Nano Sense 33 BLE  Beacon 1   (2x) nRF52840 Dongle  Beacon 2 Beacon 3   (1x) nRF52840 Development Kit  Central device (polls beacons)     The Software Stack Embedded Software Development:  Segger Embedded Studio nRF5 SDK & nRF5 SDK for Thread and Zigbee nRF Connect+Programmer for flashing code CMSIS Libraries for Arm Cortex M microcontrollers  Utilities and Other tools:  Python + Matplotlib nRF BLE Sniffer nRF 802.">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"//postliminal.github.io/ecem202a_project/posts/"},{"@type":"ListItem","position":2,"name":"Design","item":"//postliminal.github.io/ecem202a_project/posts/4design/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Design","name":"Design","description":"[image 1] - should be showing 3 beacons, a central device, and maybe a PC? Plus X-Y coordinates and roughly spatial distance. DO NOT INCLUDE specific ble or openthread specs/terms/concepts.\nContents  Hardware Platforms Software Stack BLE Application OpenThread Application Localization Methods using RSSI Experiments  The Hardware Platform The SoC: Nordic nRF52840  (2x) Arduino Nano Sense 33 BLE  Beacon 1 MAC:   (2x) nRF52840 Dongle  Beacon 2 MAC: Beacon 3 MAC:   (1x) nRF52840 Development Kit  Central device (polls beacons)     The Software Stack Embedded Software Development:  Segger Embedded Studio nRF5 SDK \u0026amp; nRF5 SDK for Thread and Zigbee nRF Connect+Programmer for flashing code CMSIS Libraries for Arm Cortex M microcontrollers  Utilities and Other tools:  Python + Matplotlib nRF BLE Sniffer nRF 802.","keywords":[],"articleBody":"[image 1] - should be showing 3 beacons, a central device, and maybe a PC? Plus X-Y coordinates and roughly spatial distance. DO NOT INCLUDE specific ble or openthread specs/terms/concepts.\nContents  Hardware Platforms Software Stack BLE Application OpenThread Application Localization Methods using RSSI Experiments  The Hardware Platform The SoC: Nordic nRF52840  (2x) Arduino Nano Sense 33 BLE  Beacon 1 MAC:   (2x) nRF52840 Dongle  Beacon 2 MAC: Beacon 3 MAC:   (1x) nRF52840 Development Kit  Central device (polls beacons)     The Software Stack Embedded Software Development:  Segger Embedded Studio nRF5 SDK \u0026 nRF5 SDK for Thread and Zigbee nRF Connect+Programmer for flashing code CMSIS Libraries for Arm Cortex M microcontrollers  Utilities and Other tools:  Python + Matplotlib nRF BLE Sniffer nRF 802.15.4 Sniffer WireShark  BLE Application Main idea: Beacons will use advertising channels. Central device will filter out the advertisements via mac address periodically. Will fit them into buffers, and perform trilateration to get location information.\nTODO: fix filenames of projects/hex files Projects:\n software/ble_app/ble_app_beacon_arduino software/ble_app/ble_app_beacon_dongle software/ble_app/ble_app_beacon_dk software/ble_app/ble_app_central_dk  Note: hex files ready to flash can be found in Output/Release/Exe/.hex for each project\n*************** TODO: explain code ^^ ! Thread Application Proposed network:  2 MTD (minimal thread devices)  CLI USB example for dongle CLI USB example for arduino children/end devices   1 NCP (network co-processor) + Raspberry pi  NCP example for dongle router+gateway   1 FTD (full thread device)  thread_cli_uart example for development kit leader    With this network we can make the FTD the leader (capable of easily polling children devices and neighboring routers).\nNote: automatic network creation, commissioning and joining are beyond the scope of this project, which is why the CLI’s / web GUI will be used.\n border router example  Possibility to ping all (multicast) via:\n  ping ff02::1  Projects:\n software/openthread_app/openthread_cli_arduino  based on cli/mtd/usb/ example   MISSING software/openthread_app/openthread_cli_dongle  based on cli/mtd/usb/ example   software/openthread_app/openthread_cli_dk  based on cli/ftd/uart example   software/openthread_app/openthread_ncp_dongle  based on ncp example    Note: hex files ready to flash can be found in Output/Release/Exe/.hex for each project\n*************** TODO: explain code ^^ ! references:\n ublox mqtt-sn beginner guide steve’s internet guide mqttsn  RSSI in Thread/802.15.4 Few functions/data structures to keep in mind:\n otNeighborInfo Struct Reference  Localization Methods using RSSI Initial Model: Geometrical Application Trilateration is a navigation position methodology based on simultaneous ranging from, traditionally, three trackers.Through the use of three beacons and their associated Received Signal Strength Indicator, RSSI. Trilateration can be used to estimate the location of an unknown point in space. Distances (d_one, d_two, d_three) are measured by an RSSI signal. The location of an unknown point of interest can be found by solving a system of quadratic equations. A baseline approach for Trilateration in python was used to build the intuiton and direction of this localization project. The motivating paper for this exploration is listed below and highly recommended for anyone interested in learning about this technique and overall discipline.\nModel Improvement using Fingerprinting Method: There are disadvantages of trilateration, however. Namely in the number of beacons required for precise accuracy, positioning with respect to the target, and susceptibility to noise. To address these concerns, inference methods were explored to leverage the advantafes of these methods - which can be calibrated to be more robust in real applications.Bayes theorem allows us to compute the most likely class for some measures RSSI. Reference: R. Faragher and R. Harle, “Location Fingerprinting With Bluetooth Low Energy Beacons,” in IEEE Journal on Selected Areas in Communications, vol. 33, no. 11, pp. 2418-2428, Nov. 2015, doi: 10.1109/JSAC.2015.2430281.\nDeploying the updated model: CMSIS Libraries How to implement Bayesian with CMSIS-DSP [How to implement Bayesian with SVM-DSP] https://developer.arm.com/documentation/102052/0000/Implement-your-SVM-with-CMSIS-DSP\nCons: The limitations of CMSIS ML aglorithms are plentiful. Currently, there are only a few supported wrappers for the expansive set within SK-learn, and compromises had to be done with respect to accuracy and model size.\nExperiments: The Experimental setup:\n Data was collected at the UCLA campus in the Kerchoff lounge. RSSI measurements were taken using BLE and OpenThread Applications at fixed distances of one meter, two meters, and three meters from the receiver for three channels. This data is is in the “Data” folder of the github.\n Above is an image demonstrating the RSSI values attained in the environment above, but at intervals of 0.5 meters from the origin up to three meters away. There are additional images of data measurements in the github as well.\n","wordCount":"715","inLanguage":"en","datePublished":"2021-11-01T01:26:43-07:00","dateModified":"2021-11-01T01:26:43-07:00","author":[{"@type":"Person","name":"Edwin"},{"@type":"Person","name":"Roy"}],"mainEntityOfPage":{"@type":"WebPage","@id":"//postliminal.github.io/ecem202a_project/posts/4design/"},"publisher":{"@type":"Organization","name":"LOCALIZZACIONE","logo":{"@type":"ImageObject","url":"//postliminal.github.io/ecem202a_project/favicon.ico"}}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Design","name":"Design","description":"Contents  Hardware Platforms Software Stack BLE Application OpenThread Application Localization Methods using RSSI Experiments  The Hardware Platform The SoC: Nordic nRF52840  (2x) Arduino Nano Sense 33 BLE  Beacon 1   (2x) nRF52840 Dongle  Beacon 2 Beacon 3   (1x) nRF52840 Development Kit  Central device (polls beacons)     The Software Stack Embedded Software Development:  Segger Embedded Studio nRF5 SDK \u0026amp; nRF5 SDK for Thread and Zigbee nRF Connect+Programmer for flashing code CMSIS Libraries for Arm Cortex M microcontrollers  Utilities and Other tools:  Python + Matplotlib nRF BLE Sniffer nRF 802.","keywords":[],"articleBody":"Contents  Hardware Platforms Software Stack BLE Application OpenThread Application Localization Methods using RSSI Experiments  The Hardware Platform The SoC: Nordic nRF52840  (2x) Arduino Nano Sense 33 BLE  Beacon 1   (2x) nRF52840 Dongle  Beacon 2 Beacon 3   (1x) nRF52840 Development Kit  Central device (polls beacons)     The Software Stack Embedded Software Development:  Segger Embedded Studio nRF5 SDK \u0026 nRF5 SDK for Thread and Zigbee nRF Connect+Programmer for flashing code CMSIS Libraries for Arm Cortex M microcontrollers  Utilities and Other tools:  Python + Matplotlib nRF BLE Sniffer nRF 802.15.4 Sniffer WireShark  BLE Application Main idea: Beacons will use advertising channels. Central device will filter out the advertisements via mac address periodically. Will fit them into buffers, and perform trilateration to get location information.\nProjects:\n software/ble_app/ble_app_beacon_arduino software/ble_app/ble_app_beacon_dongle software/ble_app/ble_app_central_dk  Note: hex files ready to flash can be found in Output/Release/Exe/.hex for each project\nThe central device solution:\n MAC address filtering:  Set BLE advertising filters with nrf_ble_scan_filter_set Enabled them with nrf_ble_scan_filters_enable   Handling a filter match  Using switch case NRF_BLE_SCAN_EVT_FILTER_MATCH Advertising report variable p_adv now holds contents of advertising match  Access MAC address via: p_adv-peer_addr.addr Acess RSSI via: p_adv-rssi      Thread Application Proposed network:  2 MTD (minimal thread devices)  CLI USB example for dongle CLI USB example for arduino children/end devices   1 NCP (network co-processor) + Raspberry pi  NCP example for dongle router+gateway   1 FTD (full thread device)  thread_cli_uart example for development kit leader    With this network we can make the FTD the leader (capable of easily polling children devices and neighboring routers).\nNote: automatic network creation, commissioning and joining are beyond the scope of this project, which is why the CLI’s / web GUI will be used.\nPossibility to ping all (multicast) via:\n  ping ff02::1  Projects:\n software/openthread_app/openthread_cli_arduino  based on cli/mtd/usb/ example   MISSING software/openthread_app/openthread_cli_dongle  based on cli/mtd/usb/ example   software/openthread_app/openthread_cli_dk  based on cli/ftd/uart example   software/openthread_app/openthread_ncp_dongle  based on ncp example    Note: hex files ready to flash can be found in Output/Release/Exe/.hex for each project\nThe central device solution:\n MAC address filtering:  Set BLE advertising filters with nrf_ble_scan_filter_set Enabled them with nrf_ble_scan_filters_enable   Handling a filter match  Using switch case NRF_BLE_SCAN_EVT_FILTER_MATCH Advertising report variable p_adv now holds contents of advertising match  Access MAC address via: p_adv-peer_addr.addr Acess RSSI via: p_adv-rssi      references:\n ublox mqtt-sn beginner guide steve’s internet guide mqttsn  RSSI in Thread/802.15.4 Few functions/data structures to keep in mind:\n otNeighborInfo Struct Reference  Localization Methods using RSSI Initial Model: Geometrical Application Trilateration is a navigation position methodology based on simultaneous ranging from, traditionally, three trackers.Through the use of three beacons and their associated Received Signal Strength Indicator, RSSI. Trilateration can be used to estimate the location of an unknown point in space. Distances (d_one, d_two, d_three) are measured by an RSSI signal. The location of an unknown point of interest can be found by solving a system of quadratic equations. A baseline approach for Trilateration in python was used to build the intuiton and direction of this localization project. The motivating paper for this exploration is listed below and highly recommended for anyone interested in learning about this technique and overall discipline.\nModel Improvement using Fingerprinting Method: There are disadvantages of trilateration, however. Namely in the number of beacons required for precise accuracy, positioning with respect to the target, and susceptibility to noise. To address these concerns, inference methods were explored to leverage the advantafes of these methods - which can be calibrated to be more robust in real applications.Bayes theorem allows us to compute the most likely class for some measures RSSI. Reference: R. Faragher and R. Harle, “Location Fingerprinting With Bluetooth Low Energy Beacons,” in IEEE Journal on Selected Areas in Communications, vol. 33, no. 11, pp. 2418-2428, Nov. 2015, doi: 10.1109/JSAC.2015.2430281.\nDeploying the updated model: CMSIS Libraries How to implement Bayesian with CMSIS-DSP [How to implement Bayesian with SVM-DSP] https://developer.arm.com/documentation/102052/0000/Implement-your-SVM-with-CMSIS-DSP\nCons: The limitations of CMSIS ML aglorithms are plentiful. Currently, there are only a few supported wrappers for the expansive set within SK-learn, and compromises had to be done with respect to accuracy and model size.\nExperiments: The Experimental setup:\n Data was collected at the UCLA campus in the Kerchoff lounge. RSSI measurements were taken using BLE and OpenThread Applications at fixed distances of one meter, two meters, and three meters from the receiver for three channels. This data is is in the “Data” folder of the github.\n Above is an image demonstrating the RSSI values attained in the environment above, but at intervals of 0.5 meters from the origin up to three meters away. There are additional images of data measurements in the github as well.\n","wordCount":"748","inLanguage":"en","datePublished":"2021-11-01T01:26:43-07:00","dateModified":"2021-11-01T01:26:43-07:00","author":[{"@type":"Person","name":"Edwin"},{"@type":"Person","name":"Roy"}],"mainEntityOfPage":{"@type":"WebPage","@id":"//postliminal.github.io/ecem202a_project/posts/4design/"},"publisher":{"@type":"Organization","name":"LOCALIZZACIONE","logo":{"@type":"ImageObject","url":"//postliminal.github.io/ecem202a_project/favicon.ico"}}}</script>
 </head>
 <body id=top>
 <script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
@@ -70,9 +67,7 @@ Design
 <div class=post-meta>November 1, 2021&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Edwin, Roy
 </div>
 </header>
-<div class=post-content>
-<p>[image 1] - should be showing 3 beacons, a central device, and maybe a PC? Plus X-Y coordinates and roughly spatial distance. DO NOT INCLUDE specific ble or openthread specs/terms/concepts.</p>
-<h1 id=contents>Contents<a hidden class=anchor aria-hidden=true href=#contents>#</a></h1>
+<div class=post-content><h1 id=contents>Contents<a hidden class=anchor aria-hidden=true href=#contents>#</a></h1>
 <ul>
 <li>Hardware Platforms</li>
 <li>Software Stack</li>
@@ -86,13 +81,13 @@ Design
 <ul>
 <li>(2x) Arduino Nano Sense 33 BLE
 <ul>
-<li>Beacon 1 MAC:</li>
+<li>Beacon 1</li>
 </ul>
 </li>
 <li>(2x) nRF52840 Dongle
 <ul>
-<li>Beacon 2 MAC:</li>
-<li>Beacon 3 MAC:</li>
+<li>Beacon 2</li>
+<li>Beacon 3</li>
 </ul>
 </li>
 <li>(1x) nRF52840 Development Kit
@@ -102,7 +97,7 @@ Design
 </li>
 </ul>
 <p>
-<img loading=lazy src=/ecem202a_project/images/hardware.png alt=hw>
+<img loading=lazy src=/ecem202a_project/images/hardware.png alt=Hardware>
 </p>
 <h1 id=the-software-stack>The Software Stack<a hidden class=anchor aria-hidden=true href=#the-software-stack>#</a></h1>
 <h3 id=embedded-software-development>Embedded Software Development:<a hidden class=anchor aria-hidden=true href=#embedded-software-development>#</a></h3>
@@ -123,16 +118,33 @@ Design
 <p>Main idea:
 Beacons will use advertising channels.
 Central device will filter out the advertisements via mac address periodically. Will fit them into buffers, and perform trilateration to get location information.</p>
-<h3 id=todo-fix-filenames-of-projectshex-files>TODO: fix filenames of projects/hex files<a hidden class=anchor aria-hidden=true href=#todo-fix-filenames-of-projectshex-files>#</a></h3>
 <p>Projects:</p>
 <ul>
 <li><code>software/ble_app/ble_app_beacon_arduino</code></li>
 <li><code>software/ble_app/ble_app_beacon_dongle</code></li>
-<li><code>software/ble_app/ble_app_beacon_dk</code></li>
 <li><code>software/ble_app/ble_app_central_dk</code></li>
 </ul>
 <p><em>Note: hex files ready to flash can be found in Output/Release/Exe/&lt;project_name>.hex for each project</em></p>
-<h2 id=-todo-explain-code-->*************** TODO: explain code ^^ !<a hidden class=anchor aria-hidden=true href=#-todo-explain-code-->#</a></h2>
+<p>The central device solution:</p>
+<ul>
+<li>MAC address filtering:
+<ul>
+<li>Set BLE advertising filters with <code>nrf_ble_scan_filter_set</code></li>
+<li>Enabled them with <code>nrf_ble_scan_filters_enable</code></li>
+</ul>
+</li>
+<li>Handling a filter match
+<ul>
+<li>Using switch case <code>NRF_BLE_SCAN_EVT_FILTER_MATCH</code></li>
+<li>Advertising report variable <code>p_adv</code> now holds contents of advertising match
+<ul>
+<li>Access MAC address via: <code>p_adv->peer_addr.addr</code></li>
+<li>Acess RSSI via: <code>p_adv->rssi</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <h1 id=thread-application>Thread Application<a hidden class=anchor aria-hidden=true href=#thread-application>#</a></h1>
 <h3 id=proposed-network>Proposed network:<a hidden class=anchor aria-hidden=true href=#proposed-network>#</a></h3>
 <ul>
@@ -158,9 +170,6 @@ Central device will filter out the advertisements via mac address periodically. 
 </ul>
 <p>With this network we can make the FTD the leader (capable of easily polling children devices and neighboring routers).</p>
 <p><em>Note: automatic network creation, commissioning and joining are beyond the scope of this project, which is why the CLI&rsquo;s / web GUI will be used.</em></p>
-<ul>
-<li><a href="https://infocenter.nordicsemi.com/index.jsp?topic=%2Fcom.nordic.infocenter.thread_zigbee.v3.0.0%2Fthread_border_router.html">border router example</a></li>
-</ul>
 <p>Possibility to ping all (multicast) via:</p>
 <pre><code>  &gt; ping ff02::1
 </code></pre>
@@ -188,7 +197,26 @@ Central device will filter out the advertisements via mac address periodically. 
 </li>
 </ul>
 <p><em>Note: hex files ready to flash can be found in Output/Release/Exe/&lt;project_name>.hex for each project</em></p>
-<h2 id=-todo-explain-code---1>*************** TODO: explain code ^^ !<a hidden class=anchor aria-hidden=true href=#-todo-explain-code---1>#</a></h2>
+<p>The central device solution:</p>
+<ul>
+<li>MAC address filtering:
+<ul>
+<li>Set BLE advertising filters with <code>nrf_ble_scan_filter_set</code></li>
+<li>Enabled them with <code>nrf_ble_scan_filters_enable</code></li>
+</ul>
+</li>
+<li>Handling a filter match
+<ul>
+<li>Using switch case <code>NRF_BLE_SCAN_EVT_FILTER_MATCH</code></li>
+<li>Advertising report variable <code>p_adv</code> now holds contents of advertising match
+<ul>
+<li>Access MAC address via: <code>p_adv->peer_addr.addr</code></li>
+<li>Acess RSSI via: <code>p_adv->rssi</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <p>references:</p>
 <ul>
 <li><a href=https://www.u-blox.com/en/blogs/insights/mqtt-beginners-guide>ublox mqtt-sn beginner guide</a></li>
